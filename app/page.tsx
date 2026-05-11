@@ -156,13 +156,36 @@ export default function Home() {
               </p>
             </Reveal>
             <Reveal delay={600}>
-              <Link
-                href="#wunsch"
-                className="mt-12 inline-flex items-center gap-4 text-bone text-sm tracking-wide group"
-              >
-                <span className="h-px w-10 bg-bone/70 transition-all duration-700 group-hover:w-16" />
-                Wo möchten Sie beginnen?
-              </Link>
+              <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-6">
+                <Link
+                  href="/termin"
+                  className="group inline-flex items-center gap-4 bg-navy hover:bg-navy-soft text-bone px-7 py-4 text-sm tracking-wide transition-colors duration-500 [box-shadow:0_8px_32px_rgba(0,0,0,0.25)]"
+                >
+                  Termin buchen
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden
+                    className="transition-transform duration-500 group-hover:translate-x-1"
+                  >
+                    <path
+                      d="M2 10h16m-6-6 6 6-6 6"
+                      stroke="currentColor"
+                      strokeWidth="1"
+                      strokeLinecap="square"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  href="#wunsch"
+                  className="inline-flex items-center gap-4 text-bone/90 hover:text-bone text-sm tracking-wide group transition-colors"
+                >
+                  <span className="h-px w-10 bg-bone/70 transition-all duration-700 group-hover:w-16" />
+                  Wo möchten Sie beginnen?
+                </Link>
+              </div>
             </Reveal>
           </div>
         </div>
@@ -194,21 +217,33 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line-soft border border-line-soft">
             {wishes.map((w, i) => (
-              <Reveal key={w.slug} delay={i * 80}>
+              <Reveal key={w.slug} delay={Math.min(i, 2) * 80}>
                 <Link
                   href={w.href}
-                  className="group bg-bone p-8 lg:p-10 h-full flex flex-col"
+                  className="group relative bg-bone p-8 lg:p-10 h-full flex flex-col overflow-hidden"
                 >
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="serif text-mute text-sm font-light">
+                  <span
+                    aria-hidden
+                    className={`absolute inset-x-0 top-0 h-[2px] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ${
+                      w.audience === "Eltern"
+                        ? "bg-navy"
+                        : w.audience === "Erwachsene"
+                        ? "bg-ink"
+                        : "bg-navy-soft"
+                    }`}
+                  />
+
+                  <div className="flex items-start justify-between mb-8">
+                    <span className="serif text-4xl lg:text-5xl text-mute/70 font-light leading-none tabular-nums tracking-tight">
                       {w.number}
                     </span>
-                    <span className="inline-flex items-center gap-2 eyebrow text-navy">
+                    <span className="inline-flex items-center gap-2 eyebrow text-navy mt-2">
                       <AudienceIcon audience={w.audience} />
                       {w.audience}
                     </span>
                   </div>
-                  <div className="serif text-2xl text-ink font-light leading-snug mb-4">
+
+                  <div className="serif text-2xl text-ink font-light leading-snug mb-4 group-hover:italic transition-[font-style] duration-500">
                     {w.title}
                   </div>
                   <p className="text-sm text-ink-soft leading-relaxed flex-1">
