@@ -46,8 +46,8 @@ export default async function StandortPage({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/40 to-ink/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/20 to-ink/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/30 to-ink/5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/15 via-transparent to-ink/40" />
 
         <div className="relative h-full mx-auto max-w-[1400px] px-6 lg:px-10 flex flex-col justify-end pb-16 lg:pb-24">
           <Reveal>
@@ -167,7 +167,7 @@ export default async function StandortPage({
                 vollumfänglich anrechenbar.
               </p>
               <Link
-                href="/#termin"
+                href="/termin"
                 className="flex items-center justify-between bg-navy text-bone px-6 py-5 hover:bg-navy-soft transition-colors duration-500 mb-3"
               >
                 <span className="text-sm tracking-wide">Termin anfragen</span>
@@ -249,7 +249,7 @@ export default async function StandortPage({
                       alt={o.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-105"
+                      className="object-cover transition-[filter] duration-[1500ms] ease-out group-hover:brightness-110"
                     />
                   </div>
                   <div className="pt-6 flex items-start justify-between gap-4">

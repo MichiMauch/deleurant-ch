@@ -73,6 +73,41 @@ export function Footer() {
               <br />
               13:30 – 17:00
             </div>
+            <div className="mt-10 eyebrow text-bone/50">Mehr</div>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/team"
+                  className="text-bone hover:text-bone/70 transition-colors"
+                >
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ratgeber"
+                  className="text-bone hover:text-bone/70 transition-colors"
+                >
+                  Ratgeber
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/arbeitgeber"
+                  className="text-bone hover:text-bone/70 transition-colors"
+                >
+                  Arbeitgeber
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/termin"
+                  className="text-bone hover:text-bone/70 transition-colors"
+                >
+                  Termin
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

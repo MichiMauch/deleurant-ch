@@ -5,7 +5,7 @@
   --color-bone-deep: #ede9e1;
   --color-ink: #1a1d22;
   --color-ink-soft: #4a4f57;
-  --color-mute: #8a8f97;
+  --color-mute: #6b7079;
   --color-line: #d9d4ca;
   --color-line-soft: #e8e4dc;
 
@@ -30,7 +30,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  font-weight: 300;
+  font-weight: 400;
   font-feature-settings: "ss01", "kern";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -61,13 +61,11 @@ body {
 
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 1.2s cubic-bezier(0.2, 0.6, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+  transition: opacity 1.8s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
 .reveal.in {
   opacity: 1;
-  transform: translateY(0);
 }
 
 @keyframes marquee {

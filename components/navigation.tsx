@@ -2,18 +2,31 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const nav = [
-  { label: "Behandlungen", href: "#behandlungen" },
-  { label: "Standorte", href: "#standorte" },
-  { label: "Über uns", href: "#ueber-uns" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Behandlungen", href: "/#wunsch" },
+  { label: "Standorte", href: "/#standorte" },
+  { label: "Team", href: "/team" },
+  { label: "Ratgeber", href: "/ratgeber" },
 ];
+
+// Routes whose top-of-page hero is dark (image/video). Everywhere else has a
+// light bone hero, so the nav must render in ink colors from the start.
+function heroIsDark(pathname: string | null): boolean {
+  if (!pathname) return false;
+  if (pathname === "/") return true;
+  if (pathname.startsWith("/behandlungen/")) return true;
+  if (pathname.startsWith("/standorte/")) return true;
+  if (pathname.startsWith("/arbeitgeber")) return true;
+  return false;
+}
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -21,6 +34,8 @@ export function Navigation() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const onDark = !scrolled && heroIsDark(pathname);
 
   return (
     <header
@@ -31,10 +46,10 @@ export function Navigation() {
       }`}
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-between gap-10">
           <Link
             href="/"
-            className="block transition-opacity hover:opacity-80"
+            className="block transition-opacity hover:opacity-80 shrink-0"
             aria-label="Praxis Yann Deleurant — Startseite"
           >
             <Image
@@ -44,7 +59,7 @@ export function Navigation() {
               height={129}
               priority
               className={`h-9 lg:h-10 w-auto transition-[filter] duration-500 ${
-                scrolled ? "[filter:invert(1)_brightness(0.15)]" : ""
+                onDark ? "" : "[filter:invert(1)_brightness(0.15)]"
               }`}
             />
           </Link>
@@ -55,86 +70,87 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={`group relative text-[13px] tracking-wide transition-colors py-2 ${
-                  scrolled
-                    ? "text-ink-soft hover:text-ink"
-                    : "text-bone/90 hover:text-bone [text-shadow:0_1px_8px_rgba(0,0,0,0.35)]"
+                  onDark
+                    ? "text-bone/90 hover:text-bone [text-shadow:0_1px_8px_rgba(0,0,0,0.35)]"
+                    : "text-ink-soft hover:text-ink"
                 }`}
               >
                 {item.label}
                 <span
-                  className={`absolute left-0 right-0 -bottom-px mx-auto h-px w-0 transition-all duration-500 group-hover:w-full ${
-                    scrolled ? "bg-navy" : "bg-bone"
+                  className={`absolute left-0 -bottom-px h-px w-0 transition-all duration-500 group-hover:w-full ${
+                    onDark ? "bg-bone" : "bg-navy"
                   }`}
                 />
               </Link>
             ))}
           </nav>
 
-          <div className="flex items-center gap-8 lg:gap-10">
-            <a
-              href="tel:+41412100455"
-              className={`hidden lg:inline-flex items-center gap-3 text-sm tracking-wide font-light transition-colors group ${
-                scrolled
-                  ? "text-ink hover:text-navy"
-                  : "text-bone hover:text-bone [text-shadow:0_1px_8px_rgba(0,0,0,0.4)]"
+          <Link
+            href="/termin"
+            className={`hidden md:inline-flex items-center gap-3 text-[13px] tracking-wide transition-colors group shrink-0 ${
+              onDark
+                ? "text-bone hover:text-bone [text-shadow:0_1px_8px_rgba(0,0,0,0.4)]"
+                : "text-ink hover:text-navy"
+            }`}
+          >
+            <span
+              className={`h-px w-8 transition-all duration-500 group-hover:w-12 ${
+                onDark ? "bg-bone/70" : "bg-navy"
               }`}
-            >
-              <span
-                className={`h-px w-8 transition-all duration-500 group-hover:w-12 ${
-                  scrolled ? "bg-navy" : "bg-bone/70"
-                }`}
-              />
-              041 210 04 55
-            </a>
-            <Link
-              href="#termin"
-              className="hidden sm:inline-flex items-center gap-2 text-[13px] tracking-wide bg-navy text-bone px-5 py-3 hover:bg-navy-soft transition-colors duration-500"
-            >
-              Termin anfragen
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-                aria-hidden
-              >
-                <path
-                  d="M1 5h8m-3-3 3 3-3 3"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="square"
-                />
-              </svg>
-            </Link>
-            <button
-              type="button"
-              aria-label="Menü"
-              aria-expanded={open}
-              onClick={() => setOpen((v) => !v)}
-              className="md:hidden p-2 -mr-2"
-            >
-              <span className={`block h-px w-6 mb-1.5 ${scrolled ? "bg-ink" : "bg-bone"}`} />
-              <span className={`block h-px w-6 mb-1.5 ${scrolled ? "bg-ink" : "bg-bone"}`} />
-              <span className={`block h-px w-4 ml-auto ${scrolled ? "bg-ink" : "bg-bone"}`} />
-            </button>
-          </div>
+            />
+            Termin
+          </Link>
+
+          <button
+            type="button"
+            aria-label="Menü"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="md:hidden p-2 -mr-2"
+          >
+            <span
+              className={`block h-px w-6 mb-1.5 ${
+                onDark ? "bg-bone" : "bg-ink"
+              }`}
+            />
+            <span
+              className={`block h-px w-6 mb-1.5 ${
+                onDark ? "bg-bone" : "bg-ink"
+              }`}
+            />
+            <span
+              className={`block h-px w-4 ml-auto ${
+                onDark ? "bg-bone" : "bg-ink"
+              }`}
+            />
+          </button>
         </div>
       </div>
 
       {open && (
         <div className="md:hidden bg-bone border-t border-line-soft">
-          <nav className="flex flex-col px-6 py-6 gap-5">
+          <nav className="flex flex-col px-6 py-8 gap-6">
             {nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="serif text-2xl text-ink"
+                className="serif text-2xl text-ink font-light italic"
               >
                 {item.label}
               </Link>
             ))}
-            <a href="tel:+41412100455" className="text-sm text-ink-soft mt-2">
+            <Link
+              href="/termin"
+              onClick={() => setOpen(false)}
+              className="serif text-2xl text-navy font-light italic mt-2"
+            >
+              Termin
+            </Link>
+            <a
+              href="tel:+41412100455"
+              className="text-sm text-ink-soft tracking-wide mt-4"
+            >
               041 210 04 55
             </a>
           </nav>

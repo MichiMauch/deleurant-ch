@@ -284,3 +284,314 @@ export function getLocation(slug: string): Location | undefined {
 export function getTreatment(slug: string): Treatment | undefined {
   return treatments.find((t) => t.slug === slug);
 }
+
+export type Wish = {
+  slug: string;
+  number: string;
+  title: string;
+  audience: string;
+  answer: string;
+  href: string;
+};
+
+export const wishes: Wish[] = [
+  {
+    slug: "kind",
+    number: "01",
+    title: "Zahnkorrektur für mein Kind",
+    audience: "Eltern",
+    answer: "Abnehmbar oder festsitzend — je nach Alter und Befund.",
+    href: "/behandlungen/abnehmbar",
+  },
+  {
+    slug: "unsichtbar",
+    number: "02",
+    title: "Ich will es unsichtbar",
+    audience: "Erwachsene",
+    answer: "Invisalign oder Lingual — je nach Diagnose.",
+    href: "/behandlungen/unsichtbar",
+  },
+  {
+    slug: "schnell",
+    number: "03",
+    title: "Schnellstes Ergebnis",
+    audience: "Beide",
+    answer: "Festsitzend bleibt die schnellste Methode.",
+    href: "/behandlungen/festsitzend",
+  },
+  {
+    slug: "diskret",
+    number: "04",
+    title: "Erwachsen, diskret",
+    audience: "Erwachsene",
+    answer: "Lingual oder Invisalign — diskret im Alltag.",
+    href: "/behandlungen/unsichtbar",
+  },
+  {
+    slug: "preis",
+    number: "05",
+    title: "Preisgünstigster Weg",
+    audience: "Beide",
+    answer: "Abnehmbar, wenn medizinisch sinnvoll.",
+    href: "/behandlungen/abnehmbar",
+  },
+  {
+    slug: "zweitmeinung",
+    number: "06",
+    title: "Zweitmeinung",
+    audience: "Beide",
+    answer: "Erstuntersuchung CHF 150 — voll anrechenbar.",
+    href: "/termin",
+  },
+];
+
+export type Pillar = {
+  slug: string;
+  title: string;
+  tagline: string;
+  answer: string;
+  intro: string;
+  sections: { heading: string; body: string }[];
+  faq: { q: string; a: string }[];
+};
+
+export const pillars: Pillar[] = [
+  {
+    slug: "zahnspange",
+    title: "Zahnspange",
+    tagline: "Alles, was man vor einer Behandlung wissen sollte.",
+    answer:
+      "Eine Zahnspange ist eine kieferorthopädische Apparatur, die Zähne und Kiefer in eine korrekte Position bewegt. Es gibt feste Spangen (Brackets, Lingual), abnehmbare Geräte (für das wachsende Kiefer) und Aligner-Schienen (Invisalign). Die Wahl hängt vom Alter, dem Befund und dem persönlichen Anspruch ab.",
+    intro:
+      "Die Frage «Welche Spange ist die richtige?» hat keine pauschale Antwort. Sie hängt von Anatomie, Alter, Alltag und Erwartung ab. Diese Seite ordnet die wichtigsten Varianten und nennt für jede die typische Indikation.",
+    sections: [
+      {
+        heading: "Feste Spange",
+        body: "Brackets in Metall oder Keramik sind die präziseste Methode — auch bei komplexen Fehlstellungen. Sie wirken 24/7, ohne Mitwirkung des Patienten. Lingual-Brackets werden auf der Zahninnenseite befestigt und sind von aussen nicht sichtbar.",
+      },
+      {
+        heading: "Abnehmbare Spange",
+        body: "Wachstumslenkung beim Kind: oft nur über Nacht getragen. Schont die volle Zahnreihe, ideal für Frühbehandlungen im Alter von 7–12 Jahren.",
+      },
+      {
+        heading: "Aligner (Invisalign)",
+        body: "Transparente Schienen, alle 1–2 Wochen gewechselt. Praktisch unsichtbar, herausnehmbar zum Essen und Putzen. Mindestens 20–22 Stunden Tragezeit am Tag.",
+      },
+    ],
+    faq: [
+      {
+        q: "Was kostet eine Zahnspange in der Schweiz?",
+        a: "Abnehmbar ab CHF 1'800, festsitzend ab CHF 4'500, Invisalign ab CHF 5'200. Bei medizinischer Indikation können IV-Leistungen geltend gemacht werden.",
+      },
+      {
+        q: "Wie lange dauert eine Behandlung?",
+        a: "Im Schnitt 12–24 Monate bei Erwachsenen, 6–18 Monate bei abnehmbarer Frühbehandlung.",
+      },
+      {
+        q: "Tut eine Zahnspange weh?",
+        a: "In den ersten Tagen nach Anpassung leichter Druck — danach gewöhnt sich der Mund. Wir besprechen, was zu erwarten ist.",
+      },
+    ],
+  },
+  {
+    slug: "kieferorthopaedie",
+    title: "Kieferorthopädie",
+    tagline: "Was hinter dem Fachgebiet steht.",
+    answer:
+      "Kieferorthopädie ist das medizinische Fachgebiet, das Fehlstellungen von Zähnen und Kiefern diagnostiziert und korrigiert. Eine kieferorthopädische Behandlung verbessert die Funktion (Kauen, Sprechen, Atmen) und die Ästhetik. In der Schweiz ist der Titel «Fachzahnarzt für Kieferorthopädie SSO» nach einer drei- bis vierjährigen Weiterbildung geschützt.",
+    intro:
+      "Kieferorthopädie ist nicht nur Ästhetik. Sie korrigiert funktionelle Probleme — Bissfehlstellungen, Engstände, Kreuzbisse — die ohne Behandlung lebenslang Folgen haben. Diese Seite erklärt, wann eine Behandlung sinnvoll ist und wer sie durchführen darf.",
+    sections: [
+      {
+        heading: "Wann ist eine Behandlung indiziert?",
+        body: "Bei Engstand, Lückenstand, Kreuzbiss, Tiefbiss, Offenbiss oder Distalbiss. Funktionelle Auswirkungen reichen von erhöhter Kariesanfälligkeit bis zu Kiefergelenksbeschwerden. Erste Kontrolle: 7–8 Jahre.",
+      },
+      {
+        heading: "Fachzahnarzt vs. Allgemeinzahnarzt",
+        body: "Allgemeinzahnärzte dürfen einfache kieferorthopädische Behandlungen durchführen. Komplexe Befunde gehören in die Hände eines Fachzahnarztes — die zusätzliche Weiterbildung ist dreieinhalb bis vier Jahre.",
+      },
+      {
+        heading: "Was Krankenkassen bezahlen",
+        body: "Grundversicherung übernimmt keine Kosten. Bei IV-Geburtsgebrechen werden Behandlungen unter bestimmten Voraussetzungen vergütet. Zusatzversicherungen für Kinder decken oft 75 % bis zu einem Maximalbetrag.",
+      },
+    ],
+    faq: [
+      {
+        q: "Ab welchem Alter zum Kieferorthopäden?",
+        a: "Erste Kontrolle mit 7–8 Jahren. Frühbehandlungen ab 8 Jahren, Hauptbehandlung meist 11–14 Jahre. Erwachsene jederzeit.",
+      },
+      {
+        q: "Wie finde ich einen guten Kieferorthopäden in Luzern?",
+        a: "Achten Sie auf den Titel «Fachzahnarzt SSO», eine moderne digitale Ausstattung, Transparenz beim Kostenvoranschlag und ein klares Behandlungskonzept.",
+      },
+      {
+        q: "Was passiert beim Erstgespräch?",
+        a: "60 Minuten: Anamnese, klinische Untersuchung, Aufnahmen, Besprechung der Optionen. Kosten CHF 150 — bei Behandlungsbeginn vollumfänglich anrechenbar.",
+      },
+    ],
+  },
+  {
+    slug: "invisalign",
+    title: "Invisalign",
+    tagline: "Aligner — Möglichkeiten und Grenzen.",
+    answer:
+      "Invisalign ist ein Aligner-System: transparente, herausnehmbare Schienen, die alle 1–2 Wochen gewechselt werden. Es eignet sich für leichte bis mittelschwere Zahnfehlstellungen bei Erwachsenen und disziplinierten Jugendlichen. Mindesttragezeit: 20–22 Stunden täglich. Kosten in der Schweiz: ab CHF 5'200, abhängig von Komplexität und Dauer.",
+    intro:
+      "Invisalign ist eine echte Alternative zur klassischen Spange — aber nicht für jeden Befund die beste. Hier erfahren Sie, wann Aligner funktionieren, wann nicht, und worauf Sie achten sollten.",
+    sections: [
+      {
+        heading: "Wie Aligner funktionieren",
+        body: "Die Bewegungen werden vor Behandlungsbeginn am Computer geplant. Sie sehen eine 3D-Simulation des Endergebnisses, bevor die erste Schiene produziert wird. Im Schnitt 20–40 Schienen, jede 1–2 Wochen.",
+      },
+      {
+        heading: "Wann Invisalign funktioniert",
+        body: "Engstand, Lückenstand, leichte Rotationen, leichte Bisskorrekturen. Bei komplexen Fehlstellungen, starken Rotationen oder Auxiliarbedarf bleibt die festsitzende Therapie überlegen.",
+      },
+      {
+        heading: "Tragedisziplin entscheidet",
+        body: "Aligner wirken nur, wenn sie getragen werden. Unter 20 Stunden täglich verzögern sich Bewegungen — über 22 Stunden bringt keinen Vorteil. Ehrlichkeit mit sich selbst ist die Voraussetzung.",
+      },
+    ],
+    faq: [
+      {
+        q: "Was ist der Unterschied zu anderen Alignern?",
+        a: "Invisalign ist die meistgenutzte Marke und hat das grösste klinische Datenfundament. Andere Systeme (Spark, ClearCorrect) sind technisch ähnlich, mit kleineren Unterschieden bei Material und Software.",
+      },
+      {
+        q: "Kann ich während der Behandlung normal essen?",
+        a: "Ja — die Aligner werden zum Essen und Putzen herausgenommen. Danach 20–22 Stunden am Tag getragen.",
+      },
+      {
+        q: "Bekomme ich das Ergebnis vorab zu sehen?",
+        a: "Ja. Vor Behandlungsbeginn zeigen wir eine 3D-Simulation, die das erwartete Endergebnis visualisiert.",
+      },
+    ],
+  },
+];
+
+export function getPillar(slug: string): Pillar | undefined {
+  return pillars.find((p) => p.slug === slug);
+}
+
+export type TeamMember = {
+  slug: string;
+  name: string;
+  role: string;
+  standort: string;
+  bio?: string;
+  image?: string;
+};
+
+export const team: TeamMember[] = [
+  {
+    slug: "yann-deleurant",
+    name: "Dr. med. dent. Yann Deleurant",
+    role: "Fachzahnarzt für Kieferorthopädie SSO · Praxisinhaber",
+    standort: "Luzern · Sursee · Küssnacht",
+    bio: "Yann führt die Praxis seit 2012 und ist verantwortlich für jeden Behandlungsplan. Er übernimmt Diagnostik, Planung und Schlüsselphasen — die Routinetermine begleitet sein erfahrenes Team. Diese Aufteilung ist Absicht: Sie sichert Qualität bei Wachstum.",
+    image: "/images/yann.jpg",
+  },
+  {
+    slug: "anna-keller",
+    name: "Anna Keller",
+    role: "Dipl. Dentalhygienikerin HF · Teamleitung Luzern",
+    standort: "Luzern",
+    bio: "Anna leitet das Team am Hauptsitz seit 2017. Ihr Fokus: präzise Behandlungsführung und reibungslose Abläufe — vom Erstgespräch bis zur Retention.",
+  },
+  {
+    slug: "lara-vogel",
+    name: "Lara Vogel",
+    role: "Dentalassistentin EFZ · Standortleitung Sursee",
+    standort: "Sursee",
+    bio: "Lara übernimmt seit 2021 die Standortleitung in Sursee. Sie betreut Kinder und Jugendliche mit besonderem Geduld — die Zustimmung der jungen Patient:innen ist die halbe Behandlung.",
+  },
+  {
+    slug: "marco-zwyssig",
+    name: "Marco Zwyssig",
+    role: "Dipl. Zahntechniker · Eigenes Labor",
+    standort: "Luzern (Labor)",
+    bio: "Marco fertigt sämtliche Apparaturen im hauseigenen Labor — abnehmbare Geräte, Retainer, Laborschienen. Kurze Wege bedeuten kurze Wartezeiten für unsere Patient:innen.",
+  },
+  {
+    slug: "nadine-bucher",
+    name: "Nadine Bucher",
+    role: "Empfang & Patientenkoordination",
+    standort: "Luzern",
+    bio: "Nadine ist meistens die erste Stimme, wenn Sie anrufen. Sie koordiniert Termine standortübergreifend und sorgt dafür, dass keine Anfrage unbeantwortet bleibt.",
+  },
+  {
+    slug: "rahel-koch",
+    name: "Rahel Koch",
+    role: "Dentalassistentin EFZ in Ausbildung",
+    standort: "Luzern",
+    bio: "Rahel ist im zweiten Lehrjahr und rotiert zwischen Luzern und Sursee. Bei uns lernen wir aus — Nachwuchs ist Teil der Praxisphilosophie.",
+  },
+];
+
+export type Benefit = { title: string; body: string };
+export const benefits: Benefit[] = [
+  {
+    title: "Drei Standorte. Eine Akte.",
+    body: "Sie arbeiten dort, wo es zu Ihrem Leben passt — Luzern, Sursee oder Küssnacht. Wechsel zwischen Standorten sind unkompliziert.",
+  },
+  {
+    title: "Moderne digitale Praxis",
+    body: "Intraoralscanner, 3D-Planung, papierlose Dokumentation. Wir investieren in Technik, die Ihnen Zeit zurückgibt.",
+  },
+  {
+    title: "Weiterbildung gehört zum Job",
+    body: "Fortbildungen, Kongresse und Praxis-Workshops sind Arbeitszeit — nicht Freizeit. Das KFO-Wissen bleibt aktuell.",
+  },
+  {
+    title: "Flache Hierarchie",
+    body: "Klare Entscheidungen, kurze Wege. Ihr Input wird gehört — und umgesetzt, wenn er gut ist.",
+  },
+  {
+    title: "Verlässliche Arbeitszeiten",
+    body: "Geregelte Öffnungszeiten, planbare Dienste. Keine Notfalldienste am Wochenende.",
+  },
+  {
+    title: "Faire Entlöhnung",
+    body: "Marktübliche Löhne, jährliche Anpassung. Bonus bei guten Geschäftsjahren — transparent, nicht situativ.",
+  },
+];
+
+export type Job = {
+  slug: string;
+  title: string;
+  pensum: string;
+  standort: string;
+  start: string;
+  summary: string;
+  badge?: string;
+};
+export const jobs: Job[] = [
+  {
+    slug: "dental-assistent-kuessnacht",
+    title: "Dentalassistent:in Kieferorthopädie",
+    pensum: "80 – 100 %",
+    standort: "Küssnacht am Rigi",
+    start: "August 2026",
+    summary:
+      "Für die Eröffnung der dritten Praxis suchen wir eine erfahrene DA mit KFO-Erfahrung. Aufbau ab dem ersten Tag.",
+    badge: "Neue Praxis",
+  },
+  {
+    slug: "dental-assistent-luzern",
+    title: "Dentalassistent:in",
+    pensum: "60 – 80 %",
+    standort: "Luzern",
+    start: "Nach Vereinbarung",
+    summary:
+      "Verstärkung für den Hauptsitz. KFO-Erfahrung von Vorteil, nicht zwingend — Einarbeitung gewährleistet.",
+  },
+  {
+    slug: "lehrstelle-da",
+    title: "Lehrstelle Dentalassistent:in EFZ",
+    pensum: "100 %",
+    standort: "Luzern oder Sursee",
+    start: "August 2026",
+    summary:
+      "Drei Jahre, mit Schule am BBZ Luzern. Wir suchen aufgeweckte junge Menschen — Vorerfahrung nicht nötig.",
+  },
+];

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Reveal } from "@/components/reveal";
 import { BeforeAfter } from "@/components/before-after";
+import { FaqJsonLd } from "@/components/faq-jsonld";
 import { getTreatment, treatments } from "@/lib/content";
 import type { Metadata } from "next";
 
@@ -37,6 +38,8 @@ export default async function BehandlungPage({
 
   return (
     <>
+      <FaqJsonLd items={t.faq} />
+
       {/* HERO */}
       <section className="relative h-[75vh] min-h-[560px] w-full overflow-hidden">
         <Image
@@ -47,8 +50,8 @@ export default async function BehandlungPage({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/40 to-ink/10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/20 to-ink/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/30 to-ink/5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/15 via-transparent to-ink/40" />
 
         <div className="relative h-full mx-auto max-w-[1400px] px-6 lg:px-10 flex flex-col justify-end pb-16 lg:pb-24">
           <Reveal>
@@ -157,7 +160,7 @@ export default async function BehandlungPage({
               ))}
             </ul>
             <Link
-              href="/#termin"
+              href="/termin"
               className="mt-10 inline-flex items-center gap-3 bg-navy text-bone px-7 py-4 text-sm tracking-wide hover:bg-navy-soft transition-colors duration-500"
             >
               Eignung im Erstgespräch klären
@@ -271,8 +274,7 @@ export default async function BehandlungPage({
       <section className="pb-24 lg:pb-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
           <div className="relative overflow-hidden bg-ink text-bone p-10 lg:p-20">
-            <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-navy/20 blur-3xl" />
-            <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
               <div className="lg:col-span-7">
                 <Reveal>
                   <div className="eyebrow text-bone/60 mb-6">— Nächster Schritt</div>
@@ -292,7 +294,7 @@ export default async function BehandlungPage({
               <div className="lg:col-span-5 flex flex-col gap-3">
                 <Reveal delay={200}>
                   <Link
-                    href="/#termin"
+                    href="/termin"
                     className="group flex items-center justify-between bg-navy text-bone px-8 py-6 hover:bg-navy-soft transition-colors duration-500"
                   >
                     <span className="serif text-xl font-light">
@@ -365,7 +367,7 @@ export default async function BehandlungPage({
                       alt={o.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-105"
+                      className="object-cover transition-[filter] duration-[1500ms] ease-out group-hover:brightness-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
                     <div className="absolute top-5 left-5 flex items-center gap-3 text-bone">

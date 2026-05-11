@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function Reveal({
   children,
@@ -12,15 +12,26 @@ export function Reveal({
   className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    if (typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches)
+      return;
+
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const fullyBelowViewport = rect.top > vh * 0.9;
+    if (!fullyBelowViewport) return;
+
+    setHidden(true);
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setTimeout(() => el.classList.add("in"), delay);
+            setTimeout(() => setHidden(false), delay);
             io.unobserve(el);
           }
         });
@@ -32,7 +43,7 @@ export function Reveal({
   }, [delay]);
 
   return (
-    <div ref={ref} className={`reveal ${className}`}>
+    <div ref={ref} className={`reveal ${hidden ? "" : "in"} ${className}`}>
       {children}
     </div>
   );
