@@ -8,6 +8,7 @@ import { EditModeProvider } from "@/components/cms/EditModeProvider";
 import { EditModeIndicator } from "@/components/cms/EditModeIndicator";
 import { LocaleProvider } from "@/components/cms/LocaleProvider";
 import { getRequestLocale, isEditor } from "@/lib/cms/request-locale";
+import { listLocales } from "@/i18n/locales.server";
 
 const openSans = Open_Sans({
   variable: "--font-sans",
@@ -45,7 +46,11 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [locale, editor] = await Promise.all([getRequestLocale(), isEditor()]);
+  const [locale, editor, locales] = await Promise.all([
+    getRequestLocale(),
+    isEditor(),
+    listLocales(),
+  ]);
   return (
     <html
       lang={locale}
@@ -54,7 +59,7 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col bg-bone text-ink">
         <EditModeProvider enabled={editor}>
           <LocaleProvider value={locale}>
-            <Navigation />
+            <Navigation locale={locale} locales={locales} />
             <main className="flex-1">{children}</main>
             <Footer />
             <EditModeIndicator />

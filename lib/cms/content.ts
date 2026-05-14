@@ -1,11 +1,16 @@
 import "server-only";
 import fs from "node:fs/promises";
 import { DEFAULT_LOCALE } from "@/i18n/locales";
-import { messagesPath } from "@/i18n/locales.server";
+import { messagesPath, localeExists } from "@/i18n/locales.server";
 import type { CollectionItem, CollectionKey, LocaleContent, PageKey } from "@/types/content";
 
 export async function readContent(locale: string = DEFAULT_LOCALE): Promise<LocaleContent> {
-  const raw = await fs.readFile(messagesPath(locale), "utf-8");
+  // Safety net: if the requested locale's JSON disappeared (e.g. an editor
+  // deleted it while a visitor's cookie still pointed at it), fall back to
+  // the default locale rather than 500.
+  const target =
+    locale !== DEFAULT_LOCALE && !(await localeExists(locale)) ? DEFAULT_LOCALE : locale;
+  const raw = await fs.readFile(messagesPath(target), "utf-8");
   return JSON.parse(raw) as LocaleContent;
 }
 

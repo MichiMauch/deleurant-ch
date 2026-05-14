@@ -1,11 +1,18 @@
 import { cookies } from "next/headers";
 import { DEFAULT_LOCALE } from "@/i18n/locales";
+import { localeExists } from "@/i18n/locales.server";
 
-// Single source of truth for the current request's locale.
-// Today: hardcoded to default (only German is active). When a
-// second locale is enabled, swap to cookie/header/pathname-based
-// resolution here — every page already calls this helper.
+/**
+ * Resolves the locale for the current request from the `deleurant-locale`
+ * cookie. Falls back to DEFAULT_LOCALE if no cookie, an unknown code, or a
+ * locale whose JSON file does not exist.
+ */
 export async function getRequestLocale(): Promise<string> {
+  const jar = await cookies();
+  const candidate = jar.get("deleurant-locale")?.value;
+  if (candidate && candidate !== DEFAULT_LOCALE && (await localeExists(candidate))) {
+    return candidate;
+  }
   return DEFAULT_LOCALE;
 }
 

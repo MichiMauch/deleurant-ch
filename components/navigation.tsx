@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { LocaleSwitcher } from "@/components/cms/LocaleSwitcher";
 
 const nav = [
   { label: "Behandlungen", href: "/#wunsch" },
@@ -11,6 +12,11 @@ const nav = [
   { label: "Team", href: "/team" },
   { label: "Ratgeber", href: "/ratgeber" },
 ];
+
+type NavigationProps = {
+  locale: string;
+  locales: string[];
+};
 
 // Routes whose top-of-page hero is dark (image/video). Everywhere else has a
 // light bone hero, so the nav must render in ink colors from the start.
@@ -23,7 +29,7 @@ function heroIsDark(pathname: string | null): boolean {
   return false;
 }
 
-export function Navigation() {
+export function Navigation({ locale, locales }: NavigationProps) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -90,6 +96,15 @@ export function Navigation() {
               aria-hidden
               className={`h-4 w-px ${onDark ? "bg-bone/30" : "bg-line"}`}
             />
+
+            <LocaleSwitcher current={locale} locales={locales} onDark={onDark} />
+
+            {locales.length > 1 && (
+              <span
+                aria-hidden
+                className={`h-4 w-px ${onDark ? "bg-bone/30" : "bg-line"}`}
+              />
+            )}
 
             <Link
               href="/termin"
@@ -170,6 +185,11 @@ export function Navigation() {
             >
               041 210 04 55
             </a>
+            {locales.length > 1 && (
+              <div className="mt-6 pt-6 border-t border-line-soft">
+                <LocaleSwitcher current={locale} locales={locales} compact />
+              </div>
+            )}
           </nav>
         </div>
       )}
