@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { withLocale } from "@/lib/cms/locale-path";
 
 const locations = [
   {
@@ -19,7 +20,7 @@ const locations = [
   },
 ];
 
-export function Footer() {
+export function Footer({ locale }: { locale: string }) {
   return (
     <footer className="bg-ink text-bone/70 mt-32">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 pt-24 pb-10">
@@ -77,7 +78,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <Link
-                  href="/team"
+                  href={withLocale("/team", locale)}
                   className="text-bone hover:text-bone/70 transition-colors"
                 >
                   Team
@@ -85,7 +86,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/ratgeber"
+                  href={withLocale("/ratgeber", locale)}
                   className="text-bone hover:text-bone/70 transition-colors"
                 >
                   Ratgeber
@@ -93,7 +94,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/arbeitgeber"
+                  href={withLocale("/arbeitgeber", locale)}
                   className="text-bone hover:text-bone/70 transition-colors"
                 >
                   Arbeitgeber
@@ -101,7 +102,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/termin"
+                  href={withLocale("/termin", locale)}
                   className="text-bone hover:text-bone/70 transition-colors"
                 >
                   Termin

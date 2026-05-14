@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { changeLocale } from "@/lib/cms/locale-path";
 
 type Props = {
   current: string;
@@ -22,15 +24,6 @@ export function LocaleSwitcher({ current, locales, onDark = false, compact = fal
     : "text-ink font-medium";
   const sep = onDark ? "text-bone/40" : "text-line";
 
-  function go(href: string) {
-    return (e: React.MouseEvent<HTMLAnchorElement>) => {
-      // Always force a full navigation (defensive against any client-side
-      // router that may try to intercept the anchor click).
-      e.preventDefault();
-      if (typeof window !== "undefined") window.location.href = href;
-    };
-  }
-
   return (
     <div
       className={`flex items-center ${compact ? "gap-3 text-sm" : "gap-2 text-[13px]"} tracking-wide uppercase`}
@@ -45,17 +38,17 @@ export function LocaleSwitcher({ current, locales, onDark = false, compact = fal
             </span>
           );
         }
-        const href = `/api/locale?set=${encodeURIComponent(code)}&back=${encodeURIComponent(pathname)}`;
+        const href = changeLocale(pathname, code, locales);
         return (
           <span key={code} className="inline-flex items-center gap-2">
             {i > 0 && !compact && <span className={sep} aria-hidden>·</span>}
-            <a
+            <Link
               href={href}
-              onClick={go(href)}
+              prefetch={false}
               className={`cursor-pointer transition-colors ${baseInactive}`}
             >
               {code}
-            </a>
+            </Link>
           </span>
         );
       })}

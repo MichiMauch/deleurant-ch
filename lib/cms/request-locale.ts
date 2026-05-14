@@ -1,17 +1,28 @@
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { DEFAULT_LOCALE } from "@/i18n/locales";
 import { localeExists } from "@/i18n/locales.server";
 
+const LOCALE_HEADER = "x-deleurant-locale";
+const EDIT_COOKIE = "deleurant-edit";
+
 /**
- * Resolves the locale for the current request from the `deleurant-locale`
- * cookie. Falls back to DEFAULT_LOCALE if no cookie, an unknown code, or a
- * locale whose JSON file does not exist.
+ * Resolves the locale for the current request from the URL prefix detected by
+ * the proxy middleware. The proxy rewrites `/fr/...` to `/...` and sets the
+ * `x-deleurant-locale` request header. Without that header we're on a default-
+ * locale URL.
+ *
+ * Falls back to DEFAULT_LOCALE if the header references a locale whose JSON
+ * file has been removed.
  */
 export async function getRequestLocale(): Promise<string> {
-  const jar = await cookies();
-  const candidate = jar.get("deleurant-locale")?.value;
-  if (candidate && candidate !== DEFAULT_LOCALE && (await localeExists(candidate))) {
-    return candidate;
+  const h = await headers();
+  const fromHeader = h.get(LOCALE_HEADER);
+  if (
+    fromHeader &&
+    fromHeader !== DEFAULT_LOCALE &&
+    (await localeExists(fromHeader))
+  ) {
+    return fromHeader;
   }
   return DEFAULT_LOCALE;
 }
@@ -25,5 +36,5 @@ export async function isEditor(): Promise<boolean> {
   const expected = process.env.EDIT_PASSWORD;
   if (!expected) return false;
   const jar = await cookies();
-  return jar.get("deleurant-edit")?.value === expected;
+  return jar.get(EDIT_COOKIE)?.value === expected;
 }

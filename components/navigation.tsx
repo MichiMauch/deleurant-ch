@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LocaleSwitcher } from "@/components/cms/LocaleSwitcher";
+import { withLocale } from "@/lib/cms/locale-path";
 
 const nav = [
   { label: "Behandlungen", href: "/#wunsch" },
@@ -54,7 +55,7 @@ export function Navigation({ locale, locales }: NavigationProps) {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="flex h-20 items-center justify-between gap-10">
           <Link
-            href="/"
+            href={withLocale("/", locale)}
             className="block transition-opacity hover:opacity-80 shrink-0"
             aria-label="Praxis Yann Deleurant — Startseite"
           >
@@ -75,7 +76,7 @@ export function Navigation({ locale, locales }: NavigationProps) {
               {nav.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={withLocale(item.href, locale)}
                   className={`group relative text-[13px] tracking-wide transition-colors py-2 ${
                     onDark
                       ? "text-bone/90 hover:text-bone [text-shadow:0_1px_8px_rgba(0,0,0,0.35)]"
@@ -107,7 +108,7 @@ export function Navigation({ locale, locales }: NavigationProps) {
             )}
 
             <Link
-              href="/termin"
+              href={withLocale("/termin", locale)}
               className={`group inline-flex items-center gap-2.5 text-[13px] tracking-wide transition-colors shrink-0 ${
                 onDark
                   ? "text-bone hover:text-bone [text-shadow:0_1px_8px_rgba(0,0,0,0.4)]"
@@ -165,7 +166,7 @@ export function Navigation({ locale, locales }: NavigationProps) {
             {nav.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={withLocale(item.href, locale)}
                 onClick={() => setOpen(false)}
                 className="serif text-2xl text-ink font-light italic"
               >
@@ -173,7 +174,7 @@ export function Navigation({ locale, locales }: NavigationProps) {
               </Link>
             ))}
             <Link
-              href="/termin"
+              href={withLocale("/termin", locale)}
               onClick={() => setOpen(false)}
               className="serif text-2xl text-navy font-light italic mt-2"
             >

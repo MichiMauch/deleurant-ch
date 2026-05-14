@@ -61,7 +61,7 @@ export default async function RootLayout({
           <LocaleProvider value={locale}>
             <Navigation locale={locale} locales={locales} />
             <main className="flex-1">{children}</main>
-            <Footer />
+            <Footer locale={locale} />
             <EditModeIndicator />
           </LocaleProvider>
         </EditModeProvider>
