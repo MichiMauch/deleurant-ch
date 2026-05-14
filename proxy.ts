@@ -12,7 +12,7 @@ const PROTECTED_API = [
   "/api/read-content",
 ];
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   // Login routes are always open.

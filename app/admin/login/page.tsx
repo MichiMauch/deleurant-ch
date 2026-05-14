@@ -18,7 +18,7 @@ export default async function LoginPage({
     <main className="min-h-screen flex items-center justify-center bg-bone-deep/40 px-6">
       <form
         method="POST"
-        action="/admin/login"
+        action="/api/login"
         className="w-full max-w-md space-y-6 rounded-2xl border border-line bg-bone p-8 shadow-sm"
       >
         <header>
