@@ -6,21 +6,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "docker:build": "docker build --build-arg NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=$(grep ^NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME .env.local | cut -d= -f2) --build-arg NEXT_PUBLIC_CLOUDINARY_API_KEY=$(grep ^NEXT_PUBLIC_CLOUDINARY_API_KEY .env.local | cut -d= -f2) -t deleurant-ch .",
+    "docker:run": "docker run --rm -p 3000:3000 --env-file .env.local -v $(pwd)/messages:/app/messages deleurant-ch"
   },
   "dependencies": {
-    "next": "16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "@tiptap/extension-link": "^3.23.4",
+    "@tiptap/pm": "^3.23.4",
+    "@tiptap/react": "^3.23.4",
+    "@tiptap/starter-kit": "^3.23.4",
+    "lucide-react": "^1.14.0",
+    "next": "^16.2.6",
+    "openai": "^6.37.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.41",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

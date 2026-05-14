@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { Open_Sans, Cormorant_Garamond } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { EditModeProvider } from "@/components/cms/EditModeProvider";
+import { EditModeIndicator } from "@/components/cms/EditModeIndicator";
+import { LocaleProvider } from "@/components/cms/LocaleProvider";
+import { getRequestLocale, isEditor } from "@/lib/cms/request-locale";
 
 const openSans = Open_Sans({
   variable: "--font-sans",
@@ -35,20 +40,30 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [locale, editor] = await Promise.all([getRequestLocale(), isEditor()]);
   return (
     <html
-      lang="de"
+      lang={locale}
       className={`${openSans.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bone text-ink">
-        <Navigation />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <EditModeProvider enabled={editor}>
+          <LocaleProvider value={locale}>
+            <Navigation />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <EditModeIndicator />
+          </LocaleProvider>
+        </EditModeProvider>
+        <Script
+          src="https://media-library.cloudinary.com/global/all.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

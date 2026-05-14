@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { locations } from "@/lib/content";
 
-const standorte = locations.map((l) => ({
-  slug: l.slug,
-  name: l.name,
-  phone: l.phone,
-}));
+const standorte = [
+  { slug: "luzern", name: "Luzern" },
+  { slug: "sursee", name: "Sursee" },
+  { slug: "kuessnacht", name: "Küssnacht" },
+];
 
 const anliegen = [
   { value: "kind", label: "Zahnkorrektur für mein Kind" },

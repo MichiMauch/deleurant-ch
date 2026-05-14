@@ -1,0 +1,1708 @@
+{
+  "seo": {
+    "title": "Deleurant — Kieferorthopädie",
+    "description": "Spezialpraxis für Kieferorthopädie. Drei Standorte in der Zentralschweiz.",
+    "ogTitle": "Deleurant — Kieferorthopädie",
+    "ogDescription": "Spezialpraxis für Kieferorthopädie. Drei Standorte in der Zentralschweiz.",
+    "ogImage": "/images/start.jpg",
+    "keywords": "Kieferorthopädie, Zahnspange, Invisalign, Luzern, Sursee, Küssnacht, Deleurant"
+  },
+  "pages": {
+    "home": {
+      "seo": {
+        "title": "Deleurant — Kieferorthopädie",
+        "description": "Spezialpraxis für Kieferorthopädie. Für Kinder, Jugendliche und Erwachsene — an drei Standorten in der Zentralschweiz."
+      },
+      "sections": [
+        {
+          "id": "55b579b4-56fe-4e5d-b607-403b9d0b05ed",
+          "type": "HeroVideo",
+          "data": {
+            "subtitle": "Spezialpraxis für Kieferorthopädie. Für Kinder, Jugendliche und Erwachsene — an drei Standorten in der Zentralschweiz.",
+            "video": "/media/hero.mp4",
+            "poster": "/images/start.jpg",
+            "ctaPrimary": {
+              "label": "Termin buchen",
+              "linkRef": {
+                "kind": "page",
+                "slug": "termin"
+              }
+            },
+            "ctaSecondary": {
+              "label": "Wo möchten Sie beginnen?",
+              "linkRef": {
+                "kind": "external",
+                "href": "#wunsch"
+              }
+            },
+            "headline": "Schöne Zähne.<br><em>Ein Lächeln, das bleibt.</em><br>"
+          }
+        },
+        {
+          "id": "825a7a76-dfc1-4fca-a437-b4e0d1227e39",
+          "type": "WishesGrid",
+          "data": {
+            "eyebrow": "Ihr Ausgangspunkt",
+            "intro": "Jede Behandlung beginnt mit Ihrer Situation. Wählen Sie Ihren Ausgangspunkt.",
+            "items": [
+              {
+                "number": "01",
+                "title": "Zahnkorrektur für mein Kind",
+                "audience": "Eltern",
+                "answer": "Abnehmbar oder festsitzend — je nach Alter und Befund.",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "abnehmbar"
+                }
+              },
+              {
+                "number": "02",
+                "title": "Ich will es unsichtbar",
+                "audience": "Erwachsene",
+                "answer": "Invisalign oder Lingual — je nach Diagnose.",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "unsichtbar"
+                }
+              },
+              {
+                "number": "03",
+                "title": "Schnellstes Ergebnis",
+                "audience": "Beide",
+                "answer": "Festsitzend bleibt die schnellste Methode.",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "festsitzend"
+                }
+              },
+              {
+                "number": "04",
+                "title": "Erwachsen, diskret",
+                "audience": "Erwachsene",
+                "answer": "Lingual oder Invisalign — diskret im Alltag.",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "unsichtbar"
+                }
+              },
+              {
+                "number": "05",
+                "title": "Preisgünstigster Weg",
+                "audience": "Beide",
+                "answer": "Abnehmbar, wenn medizinisch sinnvoll.",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "abnehmbar"
+                }
+              },
+              {
+                "number": "06",
+                "title": "Zweitmeinung",
+                "audience": "Beide",
+                "answer": "Erstuntersuchung CHF 150 — voll anrechenbar.",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              }
+            ],
+            "headline": "Was möchten Sie<br><em>erreichen?</em>"
+          }
+        },
+        {
+          "id": "af956489-2798-45f2-852c-416e04aed353",
+          "type": "TreatmentsTeaser",
+          "data": {
+            "divider": true,
+            "items": [
+              {
+                "title": "Festsitzend",
+                "tagline": "Brackets und Lingualtechnik.",
+                "photo": "/images/festsitzend-photo.jpg",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "festsitzend"
+                }
+              },
+              {
+                "title": "Abnehmbar",
+                "tagline": "Für das wachsende Kiefer.",
+                "photo": "/images/abnehmbar-photo.jpg",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "abnehmbar"
+                }
+              },
+              {
+                "title": "Unsichtbar",
+                "tagline": "Aligner. Diskret durch den Alltag.",
+                "photo": "/images/unsichtbar-photo.jpg",
+                "linkRef": {
+                  "kind": "treatment",
+                  "slug": "unsichtbar"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "1490718e-ea35-471c-9ddc-f832a7872d58",
+          "type": "CallToAction",
+          "data": {
+            "subtitle": "In 60 Minuten klären wir gemeinsam, was zu Ihnen passt. CHF 150, bei Behandlungsbeginn voll anrechenbar.",
+            "ctaPrimary": {
+              "label": "Erstgespräch",
+              "linkRef": {
+                "kind": "page",
+                "slug": "termin"
+              }
+            },
+            "theme": "dark",
+            "headline": "Möchten Sie ein unverbindliches<br><em>Erstgespräch?</em>"
+          }
+        },
+        {
+          "id": "a472e606-4d41-4d80-9190-ee33d1837cee",
+          "type": "TrustStrip",
+          "data": {
+            "items": [
+              {
+                "kpi": "Seit 2012",
+                "label": "Praxis Deleurant"
+              },
+              {
+                "kpi": "3 Standorte",
+                "label": "Luzern · Sursee · Küssnacht"
+              },
+              {
+                "kpi": "SSO",
+                "label": "Fachzahnarzt Kieferorthopädie"
+              },
+              {
+                "kpi": "Eigenes Labor",
+                "label": "Zahntechnik im Haus"
+              }
+            ]
+          }
+        },
+        {
+          "id": "4ddf8781-fa51-4860-b0b8-248de3ead832",
+          "type": "LocationsTeaser",
+          "data": {
+            "items": [
+              {
+                "linkRef": {
+                  "kind": "location",
+                  "slug": "luzern"
+                },
+                "name": "Luzern",
+                "address": "Theaterstrasse 5",
+                "zip": "6003 Luzern",
+                "image": "/images/home.jpg"
+              },
+              {
+                "linkRef": {
+                  "kind": "location",
+                  "slug": "sursee"
+                },
+                "name": "Sursee",
+                "address": "Christoph-Schnyder-Strasse 2a",
+                "zip": "6210 Sursee",
+                "image": "https://res.cloudinary.com/dbbq4h1rq/image/upload/v1778703196/cld-sample-3.jpg"
+              },
+              {
+                "linkRef": {
+                  "kind": "location",
+                  "slug": "kuessnacht"
+                },
+                "name": "Küssnacht",
+                "address": "Bahnhofstrasse 15",
+                "zip": "6403 Küssnacht am Rigi",
+                "image": "/images/sursee2.jpg",
+                "badge": "Neu · August 2026"
+              }
+            ],
+            "headline": "Drei Standorte.<br><em>In Ihrer Nähe.</em>"
+          }
+        },
+        {
+          "id": "c0c13a4e-c245-429c-a446-caba234a217e",
+          "type": "DoctorSpotlight",
+          "data": {
+            "eyebrow": "Praxisinhaber",
+            "credentials": "Fachzahnarzt für Kieferorthopädie (SSO)",
+            "body": "Wir nehmen uns die Zeit, Ihre Anatomie, Ihren Alltag und Ihre Erwartung zu verstehen — und entwickeln daraus einen Plan, der vorhersehbar zum Ergebnis führt.",
+            "quote": "Ein Lächeln entsteht nicht in der Praxis — es entsteht im Leben. Wir geben ihm nur den Rahmen.",
+            "image": "/images/yann.jpg",
+            "link": {
+              "label": "Über das Team",
+              "linkRef": {
+                "kind": "page",
+                "slug": "team"
+              }
+            },
+            "headline": "Dr. med. dent.<br><em>Yann Deleurant</em>"
+          }
+        },
+        {
+          "id": "22b9caaa-1cd9-42d0-ae80-cc9888063259",
+          "type": "MethodTimeline",
+          "data": {
+            "intro": "Vom Erstgespräch bis zur Nachsorge — Sie wissen jederzeit, wo Sie stehen.",
+            "steps": [
+              {
+                "title": "Erstgespräch & Diagnostik",
+                "duration": "ca. 60 Min."
+              },
+              {
+                "title": "Behandlungsplan & Visualisierung",
+                "duration": "1 – 2 Wochen"
+              },
+              {
+                "title": "Aktive Behandlung",
+                "duration": "12 – 24 Monate"
+              },
+              {
+                "title": "Feineinstellung",
+                "duration": "2 – 4 Monate"
+              },
+              {
+                "title": "Retention & Nachsorge",
+                "duration": "kontinuierlich"
+              }
+            ],
+            "cta": {
+              "label": "Termin",
+              "linkRef": {
+                "kind": "page",
+                "slug": "termin"
+              },
+              "subtitle": "Erstgespräch · 60 Minuten · CHF 150 — voll anrechenbar."
+            },
+            "headline": "Fünf Schritte.<br><em>Ein klarer Weg.</em>"
+          }
+        },
+        {
+          "id": "6906e1ef-70cc-486c-a6d2-aec1d9cefba3",
+          "type": "Testimonials",
+          "data": {
+            "items": [
+              {
+                "quote": "Nach Jahren habe ich mich endlich getraut. Die diskrete Beratung und die unsichtbaren Aligner haben mein Lächeln verändert — und meine Hemmung gleich mit.",
+                "name": "Andrea M.",
+                "treatment": "Invisalign · 14 Monate"
+              },
+              {
+                "quote": "Vom Erstgespräch bis zur letzten Kontrolle: alles auf den Punkt. Das Team ist ehrlich, professionell und nimmt sich die Zeit, die man braucht.",
+                "name": "Markus B.",
+                "treatment": "Festsitzend · 22 Monate"
+              },
+              {
+                "quote": "Unsere Tochter wurde von der ersten Minute ernst genommen. Wir fühlen uns sehr gut aufgehoben — und das Ergebnis spricht für sich.",
+                "name": "Familie Imhof",
+                "treatment": "Frühbehandlung Kind"
+              }
+            ],
+            "headline": "Stimmen."
+          }
+        },
+        {
+          "id": "e5324e0b-3b41-400a-8d25-16833e755e19",
+          "type": "CallToAction",
+          "data": {
+            "subtitle": "Sie wissen, was Sie wollen — wir buchen Ihren Termin. Direkt online oder telefonisch.",
+            "ctaPrimary": {
+              "label": "Termin buchen",
+              "linkRef": {
+                "kind": "page",
+                "slug": "termin"
+              }
+            },
+            "ctaSecondary": {
+              "label": "041 210 04 55",
+              "linkRef": {
+                "kind": "external",
+                "href": "tel:+41412100455"
+              }
+            },
+            "theme": "dark",
+            "headline": "Bereit zu<br><em>starten?</em>"
+          }
+        }
+      ]
+    },
+    "team": {
+      "seo": {
+        "title": "Team — Deleurant Kieferorthopädie",
+        "description": "Sechs Menschen mit klaren Rollen — und einer gemeinsamen Handschrift: Qualität bei Wachstum."
+      },
+      "sections": [
+        {
+          "id": "ba5c5ea7-1d13-4fbd-8fad-fdd55ee0216b",
+          "type": "HeroImage",
+          "data": {
+            "eyebrow": "Das Team",
+            "subtitle": "Yann verantwortet jeden Behandlungsplan. Die Routine begleitet sein erfahrenes Team — diese Aufteilung ist Absicht.",
+            "image": "/images/yann.jpg",
+            "headline": "Sechs Menschen.<br><em>Eine Handschrift.</em>"
+          }
+        },
+        {
+          "id": "69bd9f33-3f2a-4c05-a99f-983e0e7b700e",
+          "type": "TeamGrid",
+          "data": {
+            "members": [
+              {
+                "slug": "yann-deleurant",
+                "name": "Dr. med. dent. Yann Deleurant",
+                "role": "Fachzahnarzt für Kieferorthopädie SSO · Praxisinhaber",
+                "standort": "Luzern · Sursee · Küssnacht",
+                "bio": "Yann führt die Praxis seit 2012 und ist verantwortlich für jeden Behandlungsplan. Er übernimmt Diagnostik, Planung und Schlüsselphasen — die Routinetermine begleitet sein erfahrenes Team. Diese Aufteilung ist Absicht: Sie sichert Qualität bei Wachstum.",
+                "image": "/images/yann.jpg"
+              },
+              {
+                "slug": "anna-keller",
+                "name": "Anna Keller",
+                "role": "Dipl. Dentalhygienikerin HF · Teamleitung Luzern",
+                "standort": "Luzern",
+                "bio": "Anna leitet das Team am Hauptsitz seit 2017. Ihr Fokus: präzise Behandlungsführung und reibungslose Abläufe — vom Erstgespräch bis zur Retention."
+              },
+              {
+                "slug": "lara-vogel",
+                "name": "Lara Vogel",
+                "role": "Dentalassistentin EFZ · Standortleitung Sursee",
+                "standort": "Sursee",
+                "bio": "Lara übernimmt seit 2021 die Standortleitung in Sursee. Sie betreut Kinder und Jugendliche mit besonderem Geduld — die Zustimmung der jungen Patient:innen ist die halbe Behandlung."
+              },
+              {
+                "slug": "marco-zwyssig",
+                "name": "Marco Zwyssig",
+                "role": "Dipl. Zahntechniker · Eigenes Labor",
+                "standort": "Luzern (Labor)",
+                "bio": "Marco fertigt sämtliche Apparaturen im hauseigenen Labor — abnehmbare Geräte, Retainer, Laborschienen. Kurze Wege bedeuten kurze Wartezeiten für unsere Patient:innen."
+              },
+              {
+                "slug": "nadine-bucher",
+                "name": "Nadine Bucher",
+                "role": "Empfang & Patientenkoordination",
+                "standort": "Luzern",
+                "bio": "Nadine ist meistens die erste Stimme, wenn Sie anrufen. Sie koordiniert Termine standortübergreifend und sorgt dafür, dass keine Anfrage unbeantwortet bleibt."
+              },
+              {
+                "slug": "rahel-koch",
+                "name": "Rahel Koch",
+                "role": "Dentalassistentin EFZ in Ausbildung",
+                "standort": "Luzern",
+                "bio": "Rahel ist im zweiten Lehrjahr und rotiert zwischen Luzern und Sursee. Bei uns lernen wir aus — Nachwuchs ist Teil der Praxisphilosophie."
+              }
+            ],
+            "headline": "Team"
+          }
+        },
+        {
+          "id": "b93ea741-dd72-46cb-a581-1b87a64c58e7",
+          "type": "CallToAction",
+          "data": {
+            "subtitle": "Buchen Sie ein Erstgespräch — 60 Minuten, CHF 150, bei Behandlungsbeginn voll anrechenbar.",
+            "ctaPrimary": {
+              "label": "Termin buchen",
+              "linkRef": {
+                "kind": "page",
+                "slug": "termin"
+              }
+            },
+            "theme": "dark",
+            "headline": "Lernen Sie uns<br><em>kennen.</em>"
+          }
+        }
+      ]
+    },
+    "termin": {
+      "seo": {
+        "title": "Termin buchen — Deleurant Kieferorthopädie",
+        "description": "Erstgespräch, 60 Minuten, CHF 150 — bei Behandlungsbeginn voll anrechenbar. Online buchen oder telefonisch melden."
+      },
+      "sections": [
+        {
+          "id": "17e76664-1395-4217-9384-fc04f8b0440e",
+          "type": "HeroImage",
+          "data": {
+            "eyebrow": "Termin",
+            "subtitle": "Erstgespräch — 60 Minuten, CHF 150, bei Behandlungsbeginn voll anrechenbar. Direkt online oder telefonisch.",
+            "image": "/images/home.jpg",
+            "headline": "Ihr nächster<br><em>Schritt.</em>"
+          }
+        },
+        {
+          "id": "54e45bac-ae6e-45fa-a815-fe1bb8912159",
+          "type": "ContactStrip",
+          "data": {
+            "mode": "phone",
+            "intro": "Eine Nummer — drei Standorte.",
+            "items": [
+              {
+                "label": "Zentrale",
+                "value": "041 210 04 55",
+                "href": "tel:+41412100455",
+                "detail": "Mo – Fr · 08:00 – 17:00"
+              }
+            ],
+            "headline": "Lieber<br><em>telefonisch?</em>"
+          }
+        },
+        {
+          "id": "466bbe15-37cc-4451-88d9-c52d527ef0d1",
+          "type": "TerminForm",
+          "data": {
+            "introTitle": "Online buchen",
+            "introBody": "Drei Standorte, ein Formular. Wir melden uns innert 24 Stunden mit konkreten Terminvorschlägen."
+          }
+        },
+        {
+          "id": "2a0110db-0416-4a66-ae30-a480ee804d82",
+          "type": "CallToAction",
+          "data": {
+            "subtitle": "Im Erstgespräch klären wir gemeinsam, welche Behandlung zu Ihnen passt — ohne Verpflichtung.",
+            "ctaPrimary": {
+              "label": "Ratgeber lesen",
+              "linkRef": {
+                "kind": "page",
+                "slug": "ratgeber"
+              }
+            },
+            "theme": "outline",
+            "headline": "Noch unsicher,<br><em>was passt?</em>"
+          }
+        }
+      ]
+    },
+    "arbeitgeber": {
+      "seo": {
+        "title": "Karriere bei Deleurant — Kieferorthopädie als Arbeitgeber",
+        "description": "Sechs gute Gründe, in unserer Praxis zu arbeiten — und alle offenen Stellen an drei Standorten in der Zentralschweiz."
+      },
+      "sections": [
+        {
+          "id": "1c4b9419-2419-4217-971c-e4988ce8e8c3",
+          "type": "HeroImage",
+          "data": {
+            "eyebrow": "Arbeiten bei uns",
+            "subtitle": "Kieferorthopädie auf hohem Niveau — mit klaren Strukturen, Weiterbildung als Arbeitszeit und einer flachen Hierarchie.",
+            "image": "/images/sursee1.jpg",
+            "headline": "Eine Praxis,<br><em>drei Standorte.</em>"
+          }
+        },
+        {
+          "id": "b1bbbd5e-da84-47ad-a69c-677155890298",
+          "type": "BenefitsGrid",
+          "data": {
+            "items": [
+              {
+                "title": "Drei Standorte. Eine Akte.",
+                "body": "Sie arbeiten dort, wo es zu Ihrem Leben passt — Luzern, Sursee oder Küssnacht. Wechsel zwischen Standorten sind unkompliziert."
+              },
+              {
+                "title": "Moderne digitale Praxis",
+                "body": "Intraoralscanner, 3D-Planung, papierlose Dokumentation. Wir investieren in Technik, die Ihnen Zeit zurückgibt."
+              },
+              {
+                "title": "Weiterbildung gehört zum Job",
+                "body": "Fortbildungen, Kongresse und Praxis-Workshops sind Arbeitszeit — nicht Freizeit. Das KFO-Wissen bleibt aktuell."
+              },
+              {
+                "title": "Flache Hierarchie",
+                "body": "Klare Entscheidungen, kurze Wege. Ihr Input wird gehört — und umgesetzt, wenn er gut ist."
+              },
+              {
+                "title": "Verlässliche Arbeitszeiten",
+                "body": "Geregelte Öffnungszeiten, planbare Dienste. Keine Notfalldienste am Wochenende."
+              },
+              {
+                "title": "Faire Entlöhnung",
+                "body": "Marktübliche Löhne, jährliche Anpassung. Bonus bei guten Geschäftsjahren — transparent, nicht situativ."
+              }
+            ],
+            "headline": "Sechs Gründe."
+          }
+        },
+        {
+          "id": "0369c1c4-dd16-4ac5-abae-047b370aa991",
+          "type": "JobsList",
+          "data": {
+            "intro": "Initiativbewerbungen sind willkommen — wir suchen Menschen, nicht nur Funktionen.",
+            "items": [
+              {
+                "slug": "dental-assistent-kuessnacht",
+                "title": "Dentalassistent:in Kieferorthopädie",
+                "pensum": "80 – 100 %",
+                "standort": "Küssnacht am Rigi",
+                "start": "August 2026",
+                "summary": "Für die Eröffnung der dritten Praxis suchen wir eine erfahrene DA mit KFO-Erfahrung. Aufbau ab dem ersten Tag.",
+                "badge": "Neue Praxis"
+              },
+              {
+                "slug": "dental-assistent-luzern",
+                "title": "Dentalassistent:in",
+                "pensum": "60 – 80 %",
+                "standort": "Luzern",
+                "start": "Nach Vereinbarung",
+                "summary": "Verstärkung für den Hauptsitz. KFO-Erfahrung von Vorteil, nicht zwingend — Einarbeitung gewährleistet."
+              },
+              {
+                "slug": "lehrstelle-da",
+                "title": "Lehrstelle Dentalassistent:in EFZ",
+                "pensum": "100 %",
+                "standort": "Luzern oder Sursee",
+                "start": "August 2026",
+                "summary": "Drei Jahre, mit Schule am BBZ Luzern. Wir suchen aufgeweckte junge Menschen — Vorerfahrung nicht nötig."
+              }
+            ],
+            "headline": "Offene Stellen"
+          }
+        },
+        {
+          "id": "9a881d64-5944-4991-bd91-0a809787cfd7",
+          "type": "CallToAction",
+          "data": {
+            "subtitle": "Schicken Sie uns ein paar Zeilen zu Ihrer Motivation und Ihrem Lebenslauf — wir melden uns persönlich.",
+            "ctaPrimary": {
+              "label": "E-Mail schreiben",
+              "linkRef": {
+                "kind": "external",
+                "href": "mailto:karriere@deleurant.ch"
+              }
+            },
+            "theme": "dark",
+            "headline": "Initiativ<br><em>bewerben?</em>"
+          }
+        }
+      ]
+    },
+    "ratgeber": {
+      "seo": {
+        "title": "Ratgeber — Deleurant Kieferorthopädie",
+        "description": "Was Sie über Zahnspange, Kieferorthopädie und Invisalign wissen sollten — vor dem ersten Termin."
+      },
+      "sections": [
+        {
+          "id": "9477fb89-47d8-4473-9172-f8246b5bfd07",
+          "type": "HeroImage",
+          "data": {
+            "eyebrow": "Ratgeber",
+            "subtitle": "Vor dem ersten Termin lohnt sich ein Blick auf die wichtigsten Fragen.",
+            "image": "/images/festsitzend-photo.jpg",
+            "headline": "Drei Themen.<br><em>Klar erklärt.</em>"
+          }
+        },
+        {
+          "id": "a630dff5-f8c6-4eab-b0d7-0542b5550dcb",
+          "type": "PillarsGrid",
+          "data": {
+            "intro": "Drei Ratgeber, sortiert nach Häufigkeit der Fragen im Erstgespräch.",
+            "items": [
+              {
+                "linkRef": {
+                  "kind": "pillar",
+                  "slug": "zahnspange"
+                },
+                "title": "Zahnspange",
+                "tagline": "Alles, was man vor einer Behandlung wissen sollte."
+              },
+              {
+                "linkRef": {
+                  "kind": "pillar",
+                  "slug": "kieferorthopaedie"
+                },
+                "title": "Kieferorthopädie",
+                "tagline": "Was hinter dem Fachgebiet steht."
+              },
+              {
+                "linkRef": {
+                  "kind": "pillar",
+                  "slug": "invisalign"
+                },
+                "title": "Invisalign",
+                "tagline": "Aligner — Möglichkeiten und Grenzen."
+              }
+            ],
+            "headline": "Die wichtigsten<br><em>Themen.</em>"
+          }
+        },
+        {
+          "id": "30119dcb-bb67-4e11-8a15-b97506256268",
+          "type": "CallToAction",
+          "data": {
+            "subtitle": "Die persönliche Beratung ersetzt keinen Ratgeber — der Ratgeber ersetzt keine Beratung.",
+            "ctaPrimary": {
+              "label": "Termin buchen",
+              "linkRef": {
+                "kind": "page",
+                "slug": "termin"
+              }
+            },
+            "theme": "dark",
+            "headline": "Bereit für ein<br><em>Gespräch?</em>"
+          }
+        }
+      ]
+    }
+  },
+  "collections": {
+    "standorte": [
+      {
+        "slug": "luzern",
+        "seo": {
+          "title": "Luzern — Deleurant Kieferorthopädie",
+          "description": "Im Herzen der Stadt — seit über zwei Jahrzehnten."
+        },
+        "sections": [
+          {
+            "id": "d11a0555-57ef-4d84-8e54-6401bf2f5c2c",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "Standort",
+              "subtitle": "Im Herzen der Stadt — seit über zwei Jahrzehnten.",
+              "image": "/images/home.jpg",
+              "meta": [
+                {
+                  "label": "Adresse",
+                  "value": "Theaterstrasse 5 · 6003 Luzern"
+                },
+                {
+                  "label": "Telefon",
+                  "value": "+41 41 210 04 55"
+                },
+                {
+                  "label": "E-Mail",
+                  "value": "luzern@deleurant.ch"
+                }
+              ],
+              "headline": "Luzern"
+            }
+          },
+          {
+            "id": "cbea7229-ec2b-406c-a68a-253fd5dbaced",
+            "type": "LocationDetail",
+            "data": {
+              "description": "Unser Hauptsitz an der Theaterstrasse vereint moderne Behandlungsräume mit der Atmosphäre eines klassischen Luzerner Stadthauses. Drei Schritte vom Bahnhof, fünf Minuten zur Altstadt.",
+              "address": {
+                "street": "Theaterstrasse 5",
+                "zip": "6003 Luzern",
+                "phone": "+41 41 210 04 55",
+                "email": "luzern@deleurant.ch"
+              },
+              "hours": [
+                {
+                  "label": "Mo – Do",
+                  "value": "08:00 – 12:30 · 13:30 – 17:00"
+                },
+                {
+                  "label": "Freitag",
+                  "value": "08:00 – 12:30 · 13:30 – 16:00"
+                },
+                {
+                  "label": "Samstag",
+                  "value": "Geschlossen"
+                }
+              ],
+              "transit": [
+                {
+                  "mode": "Bahn",
+                  "detail": "5 Min. Fussweg vom Bahnhof Luzern"
+                },
+                {
+                  "mode": "Bus",
+                  "detail": "Linie 1, 4, 7 — Haltestelle Theater"
+                },
+                {
+                  "mode": "Parking",
+                  "detail": "Parkhaus Altstadt, 2 Min. Fussweg"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2abd3af1-09ec-43d6-90cb-5c6ff7eb8b8c",
+            "type": "MapEmbed",
+            "data": {
+              "query": "Theaterstrasse 5, 6003 Luzern",
+              "aspect": "21/9"
+            }
+          },
+          {
+            "id": "2d76ccb8-7978-4eec-af3a-cb719dfc6351",
+            "type": "LocationsTeaser",
+            "data": {
+              "items": [
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "sursee"
+                  },
+                  "name": "Sursee",
+                  "address": "Christoph-Schnyder-Strasse 2a",
+                  "zip": "6210 Sursee",
+                  "image": "/images/sursee1.jpg"
+                },
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "kuessnacht"
+                  },
+                  "name": "Küssnacht",
+                  "address": "Bahnhofstrasse 15",
+                  "zip": "6403 Küssnacht am Rigi",
+                  "image": "/images/sursee2.jpg",
+                  "badge": "Neu · August 2026"
+                }
+              ],
+              "headline": "Die anderen<br><em>Standorte.</em>"
+            }
+          },
+          {
+            "id": "4a45a7f6-ec4f-4e4b-b208-6ae70c54c308",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Erstgespräch — 60 Minuten, CHF 150, bei Behandlungsbeginn voll anrechenbar.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "ctaSecondary": {
+                "label": "041 210 04 55",
+                "linkRef": {
+                  "kind": "external",
+                  "href": "tel:+41412100455"
+                }
+              },
+              "theme": "dark",
+              "headline": "Termin am<br><em>Standort Luzern.</em>"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "sursee",
+        "seo": {
+          "title": "Sursee — Deleurant Kieferorthopädie",
+          "description": "Modern, ruhig — und perfekt erreichbar."
+        },
+        "sections": [
+          {
+            "id": "bd617cfa-8aea-4d6a-8b42-af89b8e7da9d",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "Standort",
+              "subtitle": "Modern, ruhig — und perfekt erreichbar.",
+              "image": "https://res.cloudinary.com/dbbq4h1rq/image/upload/v1778703197/cld-sample-5.jpg",
+              "meta": [
+                {
+                  "label": "Adresse",
+                  "value": "Christoph-Schnyder-Strasse 2a · 6210 Sursee"
+                },
+                {
+                  "label": "Telefon",
+                  "value": "+41 41 210 04 55"
+                },
+                {
+                  "label": "E-Mail",
+                  "value": "sursee@deleurant.ch"
+                }
+              ],
+              "headline": "Sursee"
+            }
+          },
+          {
+            "id": "f59dc822-91cc-4416-a958-1943a0310b46",
+            "type": "LocationDetail",
+            "data": {
+              "description": "Unsere Praxis in Sursee bietet auf grosszügigen Räumen das gleiche Behandlungsspektrum wie in Luzern. Eigener Parkplatz direkt vor der Tür, ideale Anbindung an Sempachersee und Oberes Wiggertal.",
+              "address": {
+                "street": "Christoph-Schnyder-Strasse 2a",
+                "zip": "6210 Sursee",
+                "phone": "+41 41 210 04 55",
+                "email": "sursee@deleurant.ch"
+              },
+              "hours": [
+                {
+                  "label": "Mo – Do",
+                  "value": "08:00 – 12:30 · 13:30 – 17:00"
+                },
+                {
+                  "label": "Freitag",
+                  "value": "08:00 – 12:30 · 13:30 – 16:00"
+                },
+                {
+                  "label": "Samstag",
+                  "value": "08:00 - 11:00"
+                }
+              ],
+              "transit": [
+                {
+                  "mode": "Bahn",
+                  "detail": "8 Min. Fussweg vom Bahnhof Sursee"
+                },
+                {
+                  "mode": "Auto",
+                  "detail": "Eigener Patientenparkplatz vor dem Haus"
+                },
+                {
+                  "mode": "A2",
+                  "detail": "5 Min. von der Autobahn-Ausfahrt Sursee"
+                },
+                {
+                  "mode": "Bus",
+                  "detail": "Linie X · Haltestelle Y"
+                }
+              ]
+            }
+          },
+          {
+            "id": "a68f94fb-771f-44c5-833c-1db94b17cde2",
+            "type": "MapEmbed",
+            "data": {
+              "query": "Christoph-Schnyder-Strasse 2a, 6210 Sursee",
+              "aspect": "21/9"
+            }
+          },
+          {
+            "id": "ad16422e-8e37-4e3e-9115-d182960666ae",
+            "type": "LocationsTeaser",
+            "data": {
+              "items": [
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "luzern"
+                  },
+                  "name": "Luzern",
+                  "address": "Theaterstrasse 5",
+                  "zip": "6003 Luzern",
+                  "image": "/images/home.jpg"
+                },
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "kuessnacht"
+                  },
+                  "name": "Küssnacht",
+                  "address": "Bahnhofstrasse 15",
+                  "zip": "6403 Küssnacht am Rigi",
+                  "image": "/images/sursee2.jpg",
+                  "badge": "Neu · August 2026"
+                },
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "luzern"
+                  },
+                  "name": "Neuer Standort",
+                  "address": "Strasse",
+                  "zip": "PLZ Ort",
+                  "image": "https://res.cloudinary.com/dbbq4h1rq/image/upload/v1778703197/main-sample.png"
+                }
+              ],
+              "headline": "Die anderen<br><em>Standorte.</em>"
+            }
+          },
+          {
+            "id": "62049293-5bc6-4d0a-b659-91a525ce5ede",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Erstgespräch — 60 Minuten, CHF 150, bei Behandlungsbeginn voll anrechenbar.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "ctaSecondary": {
+                "label": "041 210 04 55",
+                "linkRef": {
+                  "kind": "external",
+                  "href": "tel:+41412100455"
+                }
+              },
+              "theme": "dark",
+              "headline": "Termine am<br><em>Standort Sursee.</em><br>"
+            }
+          },
+          {
+            "id": "248f31df-4c41-4265-aad3-4b2712cb8d69",
+            "type": "FAQ",
+            "data": {
+              "headline": "Häufige<br><em>Fragen.</em>",
+              "items": [
+                {
+                  "q": "WordPress oder Vibe-CMS?",
+                  "a": "Logo VibeCMS."
+                },
+                {
+                  "q": "Wer ist der grösste Viebcoder ohne Ahnung",
+                  "a": "Diese Fragen können wir nicht beantworten"
+                },
+                {
+                  "q": "Wer ist der kleines Vibecoder?",
+                  "a": "Auch das müssen wir leider offen lassen."
+                }
+              ],
+              "jsonLd": true
+            }
+          }
+        ]
+      },
+      {
+        "slug": "kuessnacht",
+        "seo": {
+          "title": "Küssnacht — Deleurant Kieferorthopädie",
+          "description": "Unser dritter Standort am Fusse der Rigi."
+        },
+        "sections": [
+          {
+            "id": "9b794eb0-0f91-4134-9ad3-1761a6eb6d0c",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "Standort",
+              "subtitle": "Unser dritter Standort am Fusse der Rigi.",
+              "image": "/images/sursee2.jpg",
+              "badge": "Neu · August 2026",
+              "meta": [
+                {
+                  "label": "Adresse",
+                  "value": "Bahnhofstrasse 15 · 6403 Küssnacht am Rigi"
+                },
+                {
+                  "label": "Telefon",
+                  "value": "+41 41 210 04 55"
+                },
+                {
+                  "label": "E-Mail",
+                  "value": "kuessnacht@deleurant.ch"
+                }
+              ],
+              "headline": "Küssnacht"
+            }
+          },
+          {
+            "id": "770d725b-8384-4516-854e-0cf6328d02d6",
+            "type": "LocationDetail",
+            "data": {
+              "description": "Im August 2026 eröffnen wir an der Bahnhofstrasse 15 in Küssnacht am Rigi. Auf zwei Etagen entstehen vier Behandlungsräume — die gleiche Praxisphilosophie, die gleiche Handschrift, näher bei Ihnen.",
+              "address": {
+                "street": "Bahnhofstrasse 15",
+                "zip": "6403 Küssnacht am Rigi",
+                "phone": "+41 41 210 04 55",
+                "email": "kuessnacht@deleurant.ch"
+              },
+              "hours": [
+                {
+                  "label": "Eröffnung",
+                  "value": "August 2026"
+                },
+                {
+                  "label": "Voranmeldung",
+                  "value": "ab Mai 2026 möglich"
+                }
+              ],
+              "transit": [
+                {
+                  "mode": "Bahn",
+                  "detail": "2 Min. Fussweg vom Bahnhof Küssnacht"
+                },
+                {
+                  "mode": "Schiff",
+                  "detail": "10 Min. von der Schiffstation"
+                },
+                {
+                  "mode": "Auto",
+                  "detail": "Parkmöglichkeiten in der Umgebung"
+                }
+              ]
+            }
+          },
+          {
+            "id": "6f4f125e-5300-419d-aa05-2247d85185b5",
+            "type": "MapEmbed",
+            "data": {
+              "query": "Bahnhofstrasse 15, 6403 Küssnacht am Rigi",
+              "aspect": "21/9"
+            }
+          },
+          {
+            "id": "c26b4db5-4c38-44eb-82ff-3fca15a8cbeb",
+            "type": "LocationsTeaser",
+            "data": {
+              "items": [
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "luzern"
+                  },
+                  "name": "Luzern",
+                  "address": "Theaterstrasse 5",
+                  "zip": "6003 Luzern",
+                  "image": "/images/home.jpg"
+                },
+                {
+                  "linkRef": {
+                    "kind": "location",
+                    "slug": "sursee"
+                  },
+                  "name": "Sursee",
+                  "address": "Christoph-Schnyder-Strasse 2a",
+                  "zip": "6210 Sursee",
+                  "image": "/images/sursee1.jpg"
+                }
+              ],
+              "headline": "Die anderen<br><em>Standorte.</em>"
+            }
+          },
+          {
+            "id": "cc35554a-ad22-4410-b458-e8312a118072",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Erstgespräch — 60 Minuten, CHF 150, bei Behandlungsbeginn voll anrechenbar.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "ctaSecondary": {
+                "label": "041 210 04 55",
+                "linkRef": {
+                  "kind": "external",
+                  "href": "tel:+41412100455"
+                }
+              },
+              "theme": "dark",
+              "headline": "Termin am<br><em>Standort Küssnacht.</em>"
+            }
+          }
+        ]
+      }
+    ],
+    "behandlungen": [
+      {
+        "slug": "festsitzend",
+        "seo": {
+          "title": "Festsitzend — Deleurant Kieferorthopädie",
+          "description": "Brackets in Metall oder Keramik, ergänzt durch die unsichtbare Lingualtechnik. Präzise, vorhersehbar, dauerhaft."
+        },
+        "sections": [
+          {
+            "id": "63d7c521-6f50-425e-bfb1-43dd167ce22d",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "01",
+              "subtitle": "Brackets und Lingualtechnik.",
+              "image": "/images/festsitzend-photo.jpg",
+              "meta": [
+                {
+                  "label": "Ab",
+                  "value": "ab CHF 4'500"
+                },
+                {
+                  "label": "Dauer",
+                  "value": "12 – 24 Monate"
+                },
+                {
+                  "label": "Methode",
+                  "value": "Brackets · Lingual"
+                }
+              ],
+              "headline": "Festsitzend"
+            }
+          },
+          {
+            "id": "84db59e3-c07e-45c4-9e8b-18717bb5c5ca",
+            "type": "TreatmentDetail",
+            "data": {
+              "intro": "Die klassische festsitzende Apparatur bleibt die präziseste Methode der Kieferorthopädie — heute moderner und diskreter denn je.",
+              "long": "Festsitzende Apparaturen bestehen aus kleinen Plättchen (Brackets), die auf die Zähne geklebt und durch einen Drahtbogen verbunden werden. Wir bieten Metall- und Keramikbrackets sowie die unsichtbare Lingualtechnik, bei der die Brackets auf der Zahninnenseite angebracht werden.",
+              "benefits": [
+                {
+                  "title": "Höchste Präzision",
+                  "body": "Auch komplexe Fehlstellungen lassen sich vorhersehbar korrigieren."
+                },
+                {
+                  "title": "Permanente Wirkung",
+                  "body": "24/7 aktiv — keine Tragedisziplin notwendig."
+                },
+                {
+                  "title": "Diskrete Varianten",
+                  "body": "Keramikbrackets und Lingualtechnik für anspruchsvolle Erwachsene."
+                }
+              ],
+              "forWhom": [
+                "Jugendliche mit ausgeprägten Zahnfehlstellungen",
+                "Erwachsene mit komplexen kieferorthopädischen Befunden",
+                "Patient:innen, die maximale Vorhersagbarkeit wünschen"
+              ],
+              "priceFrom": "ab CHF 4'500",
+              "duration": "12 – 24 Monate",
+              "accent": "Brackets · Lingual"
+            }
+          },
+          {
+            "id": "400c7ccf-3e00-403a-9568-78e6a47349d1",
+            "type": "BeforeAfterSlider",
+            "data": {
+              "intro": "Echte Behandlungsverläufe aus unserer Praxis. Mit dem Schieber wechseln Sie zwischen Vorher und Nachher.",
+              "pairs": [
+                {
+                  "before": "/images/ba1-vorher.jpg",
+                  "after": "/images/ba1-nachher.jpg",
+                  "duration": "20 Monate"
+                },
+                {
+                  "before": "/images/ba2-vorher.jpg",
+                  "after": "/images/ba2-nachher.jpg",
+                  "duration": "18 Monate"
+                }
+              ],
+              "theme": "dark",
+              "headline": "Vorher.<br><em>Nachher.</em>"
+            }
+          },
+          {
+            "id": "4457280e-d382-48d3-9871-6f5475ec7896",
+            "type": "FAQ",
+            "data": {
+              "items": [
+                {
+                  "q": "Wie lange dauert die Behandlung?",
+                  "a": "In der Regel zwischen 12 und 24 Monaten — abhängig von der Ausgangssituation."
+                },
+                {
+                  "q": "Sind die Brackets sichtbar?",
+                  "a": "Metallbrackets sind klein und unauffällig. Keramikbrackets passen sich der Zahnfarbe an. Lingualbrackets sind von aussen nicht sichtbar."
+                },
+                {
+                  "q": "Werden die Kosten von der Krankenkasse übernommen?",
+                  "a": "Bei medizinischer Indikation können IV-Leistungen geltend gemacht werden. Wir beraten Sie gerne dazu."
+                }
+              ],
+              "jsonLd": true,
+              "headline": "Häufige<br><em>Fragen.</em>"
+            }
+          },
+          {
+            "id": "5b1a3f31-cd4f-41e7-87ad-93a07d48c317",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Im Erstgespräch klären wir, ob diese Methode zu Ihrem Befund passt — und welche Alternativen es gibt.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "theme": "dark",
+              "headline": "Ist Festsitzend das<br><em>Richtige?</em>"
+            }
+          },
+          {
+            "id": "565a7d13-b2a1-4ad3-bfdb-588ad0523fcb",
+            "type": "TreatmentsTeaser",
+            "data": {
+              "items": [
+                {
+                  "title": "Abnehmbar",
+                  "tagline": "Für das wachsende Kiefer.",
+                  "photo": "/images/abnehmbar-photo.jpg",
+                  "linkRef": {
+                    "kind": "treatment",
+                    "slug": "abnehmbar"
+                  }
+                },
+                {
+                  "title": "Unsichtbar",
+                  "tagline": "Aligner. Diskret durch den Alltag.",
+                  "photo": "/images/unsichtbar-photo.jpg",
+                  "linkRef": {
+                    "kind": "treatment",
+                    "slug": "unsichtbar"
+                  }
+                }
+              ],
+              "headline": "Weitere<br><em>Methoden.</em>"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "abnehmbar",
+        "seo": {
+          "title": "Abnehmbar — Deleurant Kieferorthopädie",
+          "description": "Apparaturen für die Nacht und das wachsende Kiefer. Sanft begleitet, achtsam geführt."
+        },
+        "sections": [
+          {
+            "id": "cdd4bb05-2a2b-435e-aa64-f60a4dd4450b",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "02",
+              "subtitle": "Für das wachsende Kiefer.",
+              "image": "/images/abnehmbar-photo.jpg",
+              "meta": [
+                {
+                  "label": "Ab",
+                  "value": "ab CHF 1'800"
+                },
+                {
+                  "label": "Dauer",
+                  "value": "6 – 18 Monate"
+                },
+                {
+                  "label": "Methode",
+                  "value": "Wachstum · Nacht"
+                }
+              ],
+              "headline": "Abnehmbar"
+            }
+          },
+          {
+            "id": "5bc7e7bf-c71a-4ee7-a2a2-3dec48701d13",
+            "type": "TreatmentDetail",
+            "data": {
+              "intro": "Abnehmbare Apparaturen nutzen das natürliche Wachstum — die schonendste Form der frühzeitigen Kieferorthopädie für Kinder.",
+              "long": "Bei abnehmbaren Apparaturen lenken wir das Kieferwachstum in die richtige Richtung, ohne in die volle Zahnreihe einzugreifen. Häufig nur über Nacht und einige Stunden tagsüber getragen, sind sie ideal für die Frühbehandlung.",
+              "benefits": [
+                {
+                  "title": "Sanfte Korrektur",
+                  "body": "Nutzung der natürlichen Wachstumsphase."
+                },
+                {
+                  "title": "Hohe Hygiene",
+                  "body": "Zum Essen und Zähneputzen einfach herausnehmbar."
+                },
+                {
+                  "title": "Geringer Aufwand",
+                  "body": "Oft genügt das Tragen über Nacht."
+                }
+              ],
+              "forWhom": [
+                "Kinder im Wachstum (6 – 12 Jahre)",
+                "Frühbehandlung von Kreuzbiss, Engstand oder Distalbiss",
+                "Familien, die eine sanfte Erstmassnahme suchen"
+              ],
+              "priceFrom": "ab CHF 1'800",
+              "duration": "6 – 18 Monate",
+              "accent": "Wachstum · Nacht"
+            }
+          },
+          {
+            "id": "e0e7d7c4-23a2-4c16-a136-31e3c39e6a0e",
+            "type": "FAQ",
+            "data": {
+              "items": [
+                {
+                  "q": "Wann ist der richtige Zeitpunkt für eine Frühbehandlung?",
+                  "a": "Wir empfehlen eine erste kieferorthopädische Kontrolle im Alter von 7 – 9 Jahren."
+                },
+                {
+                  "q": "Was, wenn das Kind die Apparatur nicht tragen will?",
+                  "a": "Wir nehmen uns Zeit, das Kind zu erklären — und arbeiten eng mit den Eltern. Die Tragedisziplin entscheidet über den Erfolg."
+                },
+                {
+                  "q": "Genügt eine abnehmbare Apparatur immer?",
+                  "a": "Nicht in allen Fällen. Oft folgt nach der Wachstumsphase eine festsitzende Behandlung. Wir planen den Gesamtweg von Anfang an."
+                }
+              ],
+              "jsonLd": true,
+              "headline": "Häufige<br><em>Fragen.</em>"
+            }
+          },
+          {
+            "id": "15398bc5-b31d-46ed-aea7-36b53603f69f",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Im Erstgespräch klären wir, ob diese Methode zu Ihrem Befund passt — und welche Alternativen es gibt.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "theme": "dark",
+              "headline": "Ist Abnehmbar das<br><em>Richtige?</em>"
+            }
+          },
+          {
+            "id": "4087c076-abc7-4b89-a9ee-2b143a3e2e1a",
+            "type": "TreatmentsTeaser",
+            "data": {
+              "items": [
+                {
+                  "title": "Festsitzend",
+                  "tagline": "Brackets und Lingualtechnik.",
+                  "photo": "/images/festsitzend-photo.jpg",
+                  "linkRef": {
+                    "kind": "treatment",
+                    "slug": "festsitzend"
+                  }
+                },
+                {
+                  "title": "Unsichtbar",
+                  "tagline": "Aligner. Diskret durch den Alltag.",
+                  "photo": "/images/unsichtbar-photo.jpg",
+                  "linkRef": {
+                    "kind": "treatment",
+                    "slug": "unsichtbar"
+                  }
+                }
+              ],
+              "headline": "Weitere<br><em>Methoden.</em>"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "unsichtbar",
+        "seo": {
+          "title": "Unsichtbar — Deleurant Kieferorthopädie",
+          "description": "Transparente Aligner für Erwachsene, die ihre Behandlung diskret durch den Alltag tragen möchten."
+        },
+        "sections": [
+          {
+            "id": "cf5e7e14-e380-4309-82d6-d5938aed6bf2",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "03",
+              "subtitle": "Aligner. Diskret durch den Alltag.",
+              "image": "/images/unsichtbar-photo.jpg",
+              "meta": [
+                {
+                  "label": "Ab",
+                  "value": "ab CHF 5'200"
+                },
+                {
+                  "label": "Dauer",
+                  "value": "10 – 18 Monate"
+                },
+                {
+                  "label": "Methode",
+                  "value": "Aligner · Invisalign"
+                }
+              ],
+              "headline": "Unsichtbar"
+            }
+          },
+          {
+            "id": "5617638f-9a29-4a48-af66-2ea4871809d6",
+            "type": "TreatmentDetail",
+            "data": {
+              "intro": "Transparente Aligner-Schienen — die unsichtbare Alternative zur festsitzenden Zahnspange für Erwachsene.",
+              "long": "Mit Invisalign und vergleichbaren Aligner-Systemen tragen Sie alle ein bis zwei Wochen eine neue, individuell gefertigte Schiene. Die Bewegungen sind millimetergenau am Computer geplant — Sie sehen das Endergebnis bereits vor Beginn.",
+              "benefits": [
+                {
+                  "title": "Praktisch unsichtbar",
+                  "body": "Selbst aus der Nähe kaum wahrnehmbar."
+                },
+                {
+                  "title": "Herausnehmbar",
+                  "body": "Zum Essen, Putzen oder besonderen Anlässen."
+                },
+                {
+                  "title": "Visualisierung",
+                  "body": "Sie sehen das Endergebnis vor dem ersten Schritt."
+                }
+              ],
+              "forWhom": [
+                "Erwachsene mit leichten bis mittelschweren Fehlstellungen",
+                "Berufstätige, die eine sichtbare Spange vermeiden möchten",
+                "Patient:innen, die hohe Eigendisziplin mitbringen"
+              ],
+              "priceFrom": "ab CHF 5'200",
+              "duration": "10 – 18 Monate",
+              "accent": "Aligner · Invisalign"
+            }
+          },
+          {
+            "id": "1929c6bf-3ea2-41c7-ab08-fe307c12fdbf",
+            "type": "BeforeAfterSlider",
+            "data": {
+              "intro": "Echte Behandlungsverläufe aus unserer Praxis. Mit dem Schieber wechseln Sie zwischen Vorher und Nachher.",
+              "pairs": [
+                {
+                  "before": "/images/ba3-vorher.jpg",
+                  "after": "/images/ba3-nachher.jpg",
+                  "duration": "14 Monate"
+                }
+              ],
+              "theme": "dark",
+              "headline": "Vorher.<br><em>Nachher.</em>"
+            }
+          },
+          {
+            "id": "6dc60ff5-e63c-4a34-8b3b-47d437ca67e0",
+            "type": "FAQ",
+            "data": {
+              "items": [
+                {
+                  "q": "Wie lange muss ich die Aligner pro Tag tragen?",
+                  "a": "Mindestens 20 – 22 Stunden täglich — nur zum Essen und Zähneputzen herausnehmen."
+                },
+                {
+                  "q": "Sind Aligner für jeden geeignet?",
+                  "a": "Nicht in allen Fällen. Bei komplexen Befunden ist die festsitzende Therapie überlegen. Im Erstgespräch klären wir, was für Sie passt."
+                },
+                {
+                  "q": "Bekomme ich das Ergebnis im Voraus zu sehen?",
+                  "a": "Ja. Vor Behandlungsbeginn zeigen wir Ihnen eine 3D-Visualisierung des erwarteten Endergebnisses."
+                }
+              ],
+              "jsonLd": true,
+              "headline": "Häufige<br><em>Fragen.</em>"
+            }
+          },
+          {
+            "id": "a98de190-ae4d-43dc-8e54-88bb861008a9",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Im Erstgespräch klären wir, ob diese Methode zu Ihrem Befund passt — und welche Alternativen es gibt.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "theme": "dark",
+              "headline": "Ist Unsichtbar das<br><em>Richtige?</em>"
+            }
+          },
+          {
+            "id": "06f040ce-b23f-4cca-9b5f-623a8243d036",
+            "type": "TreatmentsTeaser",
+            "data": {
+              "items": [
+                {
+                  "title": "Festsitzend",
+                  "tagline": "Brackets und Lingualtechnik.",
+                  "photo": "/images/festsitzend-photo.jpg",
+                  "linkRef": {
+                    "kind": "treatment",
+                    "slug": "festsitzend"
+                  }
+                },
+                {
+                  "title": "Abnehmbar",
+                  "tagline": "Für das wachsende Kiefer.",
+                  "photo": "/images/abnehmbar-photo.jpg",
+                  "linkRef": {
+                    "kind": "treatment",
+                    "slug": "abnehmbar"
+                  }
+                }
+              ],
+              "headline": "Weitere<br><em>Methoden.</em>"
+            }
+          }
+        ]
+      }
+    ],
+    "ratgeber": [
+      {
+        "slug": "zahnspange",
+        "seo": {
+          "title": "Zahnspange — Ratgeber Deleurant",
+          "description": "Alles, was man vor einer Behandlung wissen sollte."
+        },
+        "sections": [
+          {
+            "id": "ef96b544-7e36-4ed8-8b16-1b9184354b72",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "Ratgeber",
+              "subtitle": "Alles, was man vor einer Behandlung wissen sollte.",
+              "image": "/images/festsitzend-photo.jpg",
+              "headline": "Zahnspange"
+            }
+          },
+          {
+            "id": "0ab1fa3d-1599-444f-b7a0-6f292514135e",
+            "type": "RichText",
+            "data": {
+              "html": "<p><strong>Eine Zahnspange ist eine kieferorthopädische Apparatur, die Zähne und Kiefer in eine korrekte Position bewegt. Es gibt feste Spangen (Brackets, Lingual), abnehmbare Geräte (für das wachsende Kiefer) und Aligner-Schienen (Invisalign). Die Wahl hängt vom Alter, dem Befund und dem persönlichen Anspruch ab.</strong></p>\n<p>Die Frage «Welche Spange ist die richtige?» hat keine pauschale Antwort. Sie hängt von Anatomie, Alter, Alltag und Erwartung ab. Diese Seite ordnet die wichtigsten Varianten und nennt für jede die typische Indikation.</p>\n<h2>Feste Spange</h2>\n<p>Brackets in Metall oder Keramik sind die präziseste Methode — auch bei komplexen Fehlstellungen. Sie wirken 24/7, ohne Mitwirkung des Patienten. Lingual-Brackets werden auf der Zahninnenseite befestigt und sind von aussen nicht sichtbar.</p>\n<h2>Abnehmbare Spange</h2>\n<p>Wachstumslenkung beim Kind: oft nur über Nacht getragen. Schont die volle Zahnreihe, ideal für Frühbehandlungen im Alter von 7–12 Jahren.</p>\n<h2>Aligner (Invisalign)</h2>\n<p>Transparente Schienen, alle 1–2 Wochen gewechselt. Praktisch unsichtbar, herausnehmbar zum Essen und Putzen. Mindestens 20–22 Stunden Tragezeit am Tag.</p>"
+            }
+          },
+          {
+            "id": "ae5df2cb-3afb-437f-9a2f-a6bcc4cd061a",
+            "type": "FAQ",
+            "data": {
+              "items": [
+                {
+                  "q": "Was kostet eine Zahnspange in der Schweiz?",
+                  "a": "Abnehmbar ab CHF 1'800, festsitzend ab CHF 4'500, Invisalign ab CHF 5'200. Bei medizinischer Indikation können IV-Leistungen geltend gemacht werden."
+                },
+                {
+                  "q": "Wie lange dauert eine Behandlung?",
+                  "a": "Im Schnitt 12–24 Monate bei Erwachsenen, 6–18 Monate bei abnehmbarer Frühbehandlung."
+                },
+                {
+                  "q": "Tut eine Zahnspange weh?",
+                  "a": "In den ersten Tagen nach Anpassung leichter Druck — danach gewöhnt sich der Mund. Wir besprechen, was zu erwarten ist."
+                }
+              ],
+              "jsonLd": true,
+              "headline": "Häufige<br><em>Fragen.</em>"
+            }
+          },
+          {
+            "id": "d9df6b98-fbc8-406a-98ef-64159a58ef64",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Der Ratgeber ersetzt keine Beratung. Im Erstgespräch klären wir Ihre individuelle Situation.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "theme": "dark",
+              "headline": "Persönliche<br><em>Beratung.</em>"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "kieferorthopaedie",
+        "seo": {
+          "title": "Kieferorthopädie — Ratgeber Deleurant",
+          "description": "Was hinter dem Fachgebiet steht."
+        },
+        "sections": [
+          {
+            "id": "6e7f8eb0-0be4-46ee-a7d2-7154893190a2",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "Ratgeber",
+              "subtitle": "Was hinter dem Fachgebiet steht.",
+              "image": "/images/festsitzend-photo.jpg",
+              "headline": "Kieferorthopädie"
+            }
+          },
+          {
+            "id": "a8feaa4c-0856-4a89-812a-1805511aff0e",
+            "type": "RichText",
+            "data": {
+              "html": "<p><strong>Kieferorthopädie ist das medizinische Fachgebiet, das Fehlstellungen von Zähnen und Kiefern diagnostiziert und korrigiert. Eine kieferorthopädische Behandlung verbessert die Funktion (Kauen, Sprechen, Atmen) und die Ästhetik. In der Schweiz ist der Titel «Fachzahnarzt für Kieferorthopädie SSO» nach einer drei- bis vierjährigen Weiterbildung geschützt.</strong></p>\n<p>Kieferorthopädie ist nicht nur Ästhetik. Sie korrigiert funktionelle Probleme — Bissfehlstellungen, Engstände, Kreuzbisse — die ohne Behandlung lebenslang Folgen haben. Diese Seite erklärt, wann eine Behandlung sinnvoll ist und wer sie durchführen darf.</p>\n<h2>Wann ist eine Behandlung indiziert?</h2>\n<p>Bei Engstand, Lückenstand, Kreuzbiss, Tiefbiss, Offenbiss oder Distalbiss. Funktionelle Auswirkungen reichen von erhöhter Kariesanfälligkeit bis zu Kiefergelenksbeschwerden. Erste Kontrolle: 7–8 Jahre.</p>\n<h2>Fachzahnarzt vs. Allgemeinzahnarzt</h2>\n<p>Allgemeinzahnärzte dürfen einfache kieferorthopädische Behandlungen durchführen. Komplexe Befunde gehören in die Hände eines Fachzahnarztes — die zusätzliche Weiterbildung ist dreieinhalb bis vier Jahre.</p>\n<h2>Was Krankenkassen bezahlen</h2>\n<p>Grundversicherung übernimmt keine Kosten. Bei IV-Geburtsgebrechen werden Behandlungen unter bestimmten Voraussetzungen vergütet. Zusatzversicherungen für Kinder decken oft 75 % bis zu einem Maximalbetrag.</p>"
+            }
+          },
+          {
+            "id": "24d0c6a3-3cd9-473a-928f-308194ee24fc",
+            "type": "FAQ",
+            "data": {
+              "items": [
+                {
+                  "q": "Ab welchem Alter zum Kieferorthopäden?",
+                  "a": "Erste Kontrolle mit 7–8 Jahren. Frühbehandlungen ab 8 Jahren, Hauptbehandlung meist 11–14 Jahre. Erwachsene jederzeit."
+                },
+                {
+                  "q": "Wie finde ich einen guten Kieferorthopäden in Luzern?",
+                  "a": "Achten Sie auf den Titel «Fachzahnarzt SSO», eine moderne digitale Ausstattung, Transparenz beim Kostenvoranschlag und ein klares Behandlungskonzept."
+                },
+                {
+                  "q": "Was passiert beim Erstgespräch?",
+                  "a": "60 Minuten: Anamnese, klinische Untersuchung, Aufnahmen, Besprechung der Optionen. Kosten CHF 150 — bei Behandlungsbeginn vollumfänglich anrechenbar."
+                }
+              ],
+              "jsonLd": true,
+              "headline": "Häufige<br><em>Fragen.</em>"
+            }
+          },
+          {
+            "id": "bbbc4a8d-10e7-48ac-a8e1-fbd8b021a825",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Der Ratgeber ersetzt keine Beratung. Im Erstgespräch klären wir Ihre individuelle Situation.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "theme": "dark",
+              "headline": "Persönliche<br><em>Beratung.</em>"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "invisalign",
+        "seo": {
+          "title": "Invisalign — Ratgeber Deleurant",
+          "description": "Aligner — Möglichkeiten und Grenzen."
+        },
+        "sections": [
+          {
+            "id": "e5d8fa4a-c323-4e2c-a14b-62a1f53d6c2b",
+            "type": "HeroImage",
+            "data": {
+              "eyebrow": "Ratgeber",
+              "subtitle": "Aligner — Möglichkeiten und Grenzen.",
+              "image": "/images/festsitzend-photo.jpg",
+              "headline": "Invisalign"
+            }
+          },
+          {
+            "id": "2e8f2633-b508-42aa-8f80-2ad2db480d64",
+            "type": "RichText",
+            "data": {
+              "html": "<p><strong>Invisalign ist ein Aligner-System: transparente, herausnehmbare Schienen, die alle 1–2 Wochen gewechselt werden. Es eignet sich für leichte bis mittelschwere Zahnfehlstellungen bei Erwachsenen und disziplinierten Jugendlichen. Mindesttragezeit: 20–22 Stunden täglich. Kosten in der Schweiz: ab CHF 5'200, abhängig von Komplexität und Dauer.</strong></p>\n<p>Invisalign ist eine echte Alternative zur klassischen Spange — aber nicht für jeden Befund die beste. Hier erfahren Sie, wann Aligner funktionieren, wann nicht, und worauf Sie achten sollten.</p>\n<h2>Wie Aligner funktionieren</h2>\n<p>Die Bewegungen werden vor Behandlungsbeginn am Computer geplant. Sie sehen eine 3D-Simulation des Endergebnisses, bevor die erste Schiene produziert wird. Im Schnitt 20–40 Schienen, jede 1–2 Wochen.</p>\n<h2>Wann Invisalign funktioniert</h2>\n<p>Engstand, Lückenstand, leichte Rotationen, leichte Bisskorrekturen. Bei komplexen Fehlstellungen, starken Rotationen oder Auxiliarbedarf bleibt die festsitzende Therapie überlegen.</p>\n<h2>Tragedisziplin entscheidet</h2>\n<p>Aligner wirken nur, wenn sie getragen werden. Unter 20 Stunden täglich verzögern sich Bewegungen — über 22 Stunden bringt keinen Vorteil. Ehrlichkeit mit sich selbst ist die Voraussetzung.</p>"
+            }
+          },
+          {
+            "id": "70a58567-3d5f-470b-ba77-da993f17344f",
+            "type": "FAQ",
+            "data": {
+              "items": [
+                {
+                  "q": "Was ist der Unterschied zu anderen Alignern?",
+                  "a": "Invisalign ist die meistgenutzte Marke und hat das grösste klinische Datenfundament. Andere Systeme (Spark, ClearCorrect) sind technisch ähnlich, mit kleineren Unterschieden bei Material und Software."
+                },
+                {
+                  "q": "Kann ich während der Behandlung normal essen?",
+                  "a": "Ja — die Aligner werden zum Essen und Putzen herausgenommen. Danach 20–22 Stunden am Tag getragen."
+                },
+                {
+                  "q": "Bekomme ich das Ergebnis vorab zu sehen?",
+                  "a": "Ja. Vor Behandlungsbeginn zeigen wir eine 3D-Simulation, die das erwartete Endergebnis visualisiert."
+                }
+              ],
+              "jsonLd": true,
+              "headline": "Häufige<br><em>Fragen.</em>"
+            }
+          },
+          {
+            "id": "a9e7db89-6f0c-453f-b7bd-d3e0c2d65cd7",
+            "type": "CallToAction",
+            "data": {
+              "subtitle": "Der Ratgeber ersetzt keine Beratung. Im Erstgespräch klären wir Ihre individuelle Situation.",
+              "ctaPrimary": {
+                "label": "Termin buchen",
+                "linkRef": {
+                  "kind": "page",
+                  "slug": "termin"
+                }
+              },
+              "theme": "dark",
+              "headline": "Persönliche<br><em>Beratung.</em>"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
